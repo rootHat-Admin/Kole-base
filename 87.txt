@@ -1,1 +1,73 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Түркістан Ахмет Ясауи» кәсіби колледжі</title>
+	<style>
+		body {
+			margin: 0px;
+		}
 
+		header, footer {
+			margin: 0px;
+			background-color: rgb(84, 188, 239);
+			color: white;
+			text-align: center;
+			padding: 15px;
+		}
+
+		nav {
+			background-color: blue;
+			color: white;
+			text-align: center;
+			padding: 0px;
+		}
+		nav {
+			background-color: blue;
+			color: white;
+			text-align: center;
+			padding: 0px;
+		}
+
+		nav ul {
+			margin: 0;             
+			padding: 0;           
+		}
+
+		nav li {
+			display: inline;      
+			margin: 0 15px;      
+		}
+
+		nav a {
+			color: white;         
+			
+		}
+
+	</style>
+</head>
+<body>
+
+	<header>
+		<h1>Сайттың жоғарғы бөлімі</h1>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="">Басты бет</a></li>
+			<li><a href="">Қызметтер</a></li>
+			<li><a href="">Байланыс</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<h2>Негізгі бөлем</h2>
+		<p>Бұл жерде негізгі ақпратар орналасады.</p>
+	</main>
+
+	<footer>
+		<p>&copy; 2025 Барлық құқықтар қорғалған. </p>
+	</footer>
+</body>
+</html>
