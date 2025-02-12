@@ -1,73 +1,29 @@
-<!DOCTYPE html>
-<html lang="kk">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Түркістан Ахмет Ясауи» кәсіби колледжі</title>
-	<style>
-		body {
-			margin: 0px;
-		}
+<form action="sudmit.php" method="post">
+		<label for="name">Аты:</label><br>
+    	<input type="text" id="name" name="name" required><br>
 
-		header, footer {
-			margin: 0px;
-			background-color: rgb(84, 188, 239);
-			color: white;
-			text-align: center;
-			padding: 15px;
-		}
+		<label for="last_name">Тегі:</label><br>
+	    <input type="text" id="last_name" name="last_name" required><br>
 
-		nav {
-			background-color: blue;
-			color: white;
-			text-align: center;
-			padding: 0px;
-		}
-		nav {
-			background-color: blue;
-			color: white;
-			text-align: center;
-			padding: 0px;
-		}
+	    <label for="middle_name">Әкесінің аты:</label><br>
+	    <input type="text" id="middle_name" name="middle_name" required><br>
 
-		nav ul {
-			margin: 0;             
-			padding: 0;           
-		}
+	    <label for="iin">ИИН:</label><br>
+	    <input type="text" id="iin" name="iin" title="ЖСН енгізіңіз" required><br>
 
-		nav li {
-			display: inline;      
-			margin: 0 15px;      
-		}
+	    <label for="phone">Телефон нөмірі:</label><br>
+	    <input type="tel" id="phone" name="phone"  required><br>
+	    <label for="data">Туған күні:</label><br>
+	    <input type="date" id="data" name="data"  required><br>
 
-		nav a {
-			color: white;         
-			
-		}
+		<label for="emmail">Почта:</label><br>
+		<input type="email"  id="email" name="email" required><br>
 
-	</style>
-</head>
-<body>
+		<label for="address">Тұрғылықты мекен-жайы:</label><br>
+    	<input type="text" id="address" name="address" required><br>
 
-	<header>
-		<h1>Сайттың жоғарғы бөлімі</h1>
-	</header>
+    	<label for="biography">Өмірбаяны:</label><br>
+    	<textarea id="biography" name="biography" rows="12" cols="45" required></textarea><br>
 
-	<nav>
-		<ul>
-			<li><a href="">Басты бет</a></li>
-			<li><a href="">Қызметтер</a></li>
-			<li><a href="">Байланыс</a></li>
-		</ul>
-	</nav>
-
-	<main>
-		<h2>Негізгі бөлем</h2>
-		<p>Бұл жерде негізгі ақпратар орналасады.</p>
-	</main>
-
-	<footer>
-		<p>&copy; 2025 Барлық құқықтар қорғалған. </p>
-	</footer>
-</body>
-</html>
+		<button type="sudmit">Жіберу</button>
+	</form>
