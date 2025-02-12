@@ -1,1 +1,53 @@
-12
+<form action="submit_food.php" method="post">
+        <label for="name">Логин:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="name">Почта:</label><br>
+        <input type="email" id="name" name="name" required><br>
+        <label for="password">Пороль:</label><br>
+        <input type="password" id="password" name="password" required><br>
+        <label for="tel">Телефон нөмірі:</label><br>
+        <input type="tel" id="tel" name="tel" required><br>
+        <hr>
+        <h3>Заказ беру</h3>
+
+        <label>Пицца таңдаңыз:</label><br>
+        <input type="radio" id="water" name="water" value="Су" required>
+        <label for="water">Пепперони</label><br>
+
+        <input type="radio" id="tea" name="tea" value="Шай">
+        <label for="tea">Классикалық</label><br>
+
+        <input type="radio" id="coffee" name="coffee" value="Кофе">
+        <label for="coffee">Чикаго</label><br>
+
+        <input type="radio" id="shirn" name="shirn" value="Шырын">
+        <label for="shirn">Шырын</label><br>
+
+        <input type="radio" id="water" name="water" value="Су" required>
+        <label for="water">Маргарита</label><br>
+        <br>
+
+        <label>Сусын таңдаңыз:</label><br>
+        <input type="radio" id="water" name="water" value="Су" required>
+        <label for="water">Шай</label><br>
+
+        <input type="radio" id="tea" name="tea" value="Шай">
+        <label for="tea">Cola</label><br>
+
+        <input type="radio" id="coffee" name="coffee" value="Кофе">
+        <label for="coffee">Кофе</label><br>
+
+        <input type="radio" id="shirn" name="shirn" value="Шырын">
+        <label for="shirn">Pepsi</label><br><br>
+        <hr>
+        <label for="baga">Тағамды бағалаңыз (1-5):</label><br>
+        <input type="range" id="baga" name="baga" min="1" max="5" step="1"><br><br>
+
+        <label for="address">Тұрғылықты мекен-жайы:</label>
+        <input type="text" id="address" name="address" required><br><br>
+
+        <label for="comment">Қосымша пікірлеріңіз немесе ұсыныстарыңыз:</label><br>
+        <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br><br>
+
+        <button type="submit">Тапсырысты жіберу</button>
+    </form>
