@@ -3,32 +3,28 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>dic және span</title>
+	<title>Қазақстан Республикасы</title>
 	<style>
-		.container {
-			width: 300px;
+		.city {
+			border: 2px solid black;
+			margin: 20px;
 			padding: 20px;
-			background-color: lightgray;
-			margin-bottom: 10px;
-		}
-
-		.highligh {
-			color: red;
-			font-weight: bold;
+			background-color: tamato;
 		}
 	</style>
 </head>
 <body>
-	<div class="container">
-		Бұл `div` блогы
-	</div>
-
-	<p>Бұл <span class="highligh">маңызды</span> сөз.</p>
-
-
+    <div class="city">
+        <h2>Вашингтон</h2>
+        <p>АҚШ-тың астанасы, әлемдегі ең ықпалды қалалардың бірі.</p>
+    </div>
+    <div class="city">
+        <h2>Токио</h2>
+        <p>Жапонияның астанасы, әлемнің ең ірі және дамыған мегаполистерінің бірі.</p>
+    </div>
+    <div class="city">
+         <h2>Бразилиа</h2>
+        <p>Бразилияның астанасы, қаланың жоспарлы түрде салынған ерекше архитектурасымен танымал.</p>
+    </div>
 </body>
 </html>
-
-<p>
-     Қазақстан — Орталық Азияда орналасқан ірі мемлекет. Ол шекаралары бойынша <span class="highligh">Қытай, Қырғызстан, Өзбекстан, Түрікменстан, Ресей және Ауғанстанмен шектеседі.</span>
-    </p>
