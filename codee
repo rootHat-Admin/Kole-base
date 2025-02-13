@@ -1,21 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>dic және span</title>
+	<style>
+		.container {
+			width: 300px;
+			padding: 20px;
+			background-color: lightgray;
+			margin-bottom: 10px;
+		}
+
+		.highligh {
+			color: red;
+			font-weight: bold;
+		}
+	</style>
+</head>
 <body>
-    <h1>Солдан оңға қарай жылжу</h1>
-    <marquee direction="right" scrollamount="50">
-        <img src="logo.png" alt="Бұл мәтін" width="150">
-    </marquee>
+	<div class="container">
+		Бұл `div` блогы
+	</div>
 
-    <h1>Оңнан солға қарай жылжу</h1>
-    <marquee direction="left" scrollamount="10" >
-        <img src="logo.png" alt="Бұл мәтін" width="150">
-    </marquee>
+	<p>Бұл <span class="highligh">маңызды</span> сөз.</p>
 
-    <h1>Жоғарыдан төменге қарай жылжу</h1>
-    <marquee direction="down" scrollamount="3">
-        <img src="logo.png" alt="Бұл мәтін" width="150">
-    </marquee>
 
-    <h1>Төменнен жоғары қарай жылжу</h1>
-    <marquee direction="up" scrollamount="3">
-        <img src="logo.png" alt="Бұл мәтін" width="150">
-    </marquee>
 </body>
+</html>
