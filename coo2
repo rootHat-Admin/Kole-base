@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML формасы</title>
+</head>
+<style>
+	label {
+		font-size: 12px;
+	}
+
+</style>
+<body>
+	<h2>Медициналық анықтама формасы</h2>
+
+	<form action="sudmit.php" method="post">
+		<label for="name">Аты:</label>
+    	<input type="text" id="name" name="name" required>
+    	<label for="name">Тегі:</label>
+    	<input type="text" id="name" name="name" required>
+    	<label for="name">Әкесінің аты:</label>
+    	<input type="text" id="name" name="name" required><br>
+
+    	<label for="data">Туған күні:</label><br>
+	    <input type="date" id="data" name="data"  required><br>
+
+	    <label for="iin">ИИН:</label><br>
+	    <input type="text" id="iin" name="iin" title="ЖСН енгізіңіз" required><br>
+	    <hr>
+	    <label for="g">Жынысы:</label><br>
+        <input type="radio" id="male" name="g" value="Ер" required>
+        <label for="male">Ер</label><br>
+        <input type="radio" id="female" name="g" value="Әйел" required>
+        <label for="female">Әйел</label><br>
+        <hr>
+	    <label for="phone">Телефон нөмірі:</label>
+	    <input type="tel" id="phone" name="phone"  required>
+		<label for="emmail">Почта:</label>
+		<input type="email"  id="email" name="email" required><br>
+		<br>
+
+		<label for="address">Тұрғылықты мекен-жайы:</label>
+    	<input type="text" id="address" name="address" required><br><br>
+
+    	<label for="health_info">Денсаулық жағдайы туралы ақпарат:</label><br>
+        <textarea id="health_info" name="health_info" rows="6" cols="45" required></textarea>
+        <br>
+        <hr>
+        <label>Созылмалы ауруларыңыз бар ма?</label><br>
+        <input type="checkbox" id="kant" name="kant" value="Қант диабеті">
+        <label for="kant">Қант диабеті</label><br>
+
+        <input type="checkbox" id="gipertonia" name="gipertonia" value="Гипертония">
+        <label for="gipertonia">Гипертония</label><br>
+
+        <input type="checkbox" id="astma" name="astma" value="Астма">
+        <label for="astma">Астма</label><br>
+
+        <input type="checkbox" id="no" name="no" value="Жоқ">
+        <label for="none">Жоқ</label><br>
+		<hr>
+        <label>Әлеуметтік жағдай</label><br>
+        <input type="checkbox" id="kop-ot" name="kop-ot" value="Қант диабеті">
+        <label for="kop-ot">Көп балалы отбасы</label><br>
+
+        <input type="checkbox" id="orta-ot" name="orta-ot" value="Гипертония">
+        <label for="orta-ot">Орташа отбасы</label><br>
+
+        <input type="checkbox" id="tolk-emes" name="tolk-emes" value="Астма">
+        <label for="tolk-emes">Толық емес отбасы</label><br>
+
+        <input type="checkbox" id="no" name="no" value="Жоқ">
+        <label for="no">Жоқ</label><br><br>
+
+		<button type="sudmit">Жіберу</button>
+	</form>
+
+</body>
+</html>
