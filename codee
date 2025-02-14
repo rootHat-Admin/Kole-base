@@ -14,12 +14,32 @@
 			cursor: pointer;
 			font-size: 16px;
 		}
+
+		.bu1 {
+			background-color: #32CD32;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+		}
+
+		.bu2 {
+			background-color: #B22222;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+		}
 	</style>
 </head>
 <body>
-	<button>Ryjgrf</button>
+	<button>Батырма</button>
 
-	<button class="bu1"></button>
-	<button class="bu2"></button>
+	<button class="bu1">Ок</button>
+	<button class="bu2">Отмена</button>
 </body>
 </html>
