@@ -6,24 +6,25 @@
     <title>canvas</title>
 </head>
 <body>
-    <canvas id="canvas5" width="400" height="300"></canvas>
+    <canvas id="canvas4" width="400" height="300"></canvas>
     <script>
-        let canvas = document.getElementById("canvas5");
+        let canvas = document.getElementById("canvas4");
         let ctx = canvas.getContext("2d");
 
-        function randomColor() {
-            return "#" + Math.floor(Math.random() * 16777215).toString(16);
-        }
+        ctx.fillStyle = "yellow";
+        ctx.fillRect(100, 150, 150, 100);
 
-        for (let i = 0; i < 5; i++) {
-            let x = Math.random() * 300;
-            let y = Math.random() * 200;
-            let width = Math.random() * 100;
-            let height = Math.random() * 100;
+        ctx.fillStyle = "blue";
+        ctx.fillRect(130, 170, 30, 30);
+        ctx.fillRect(190, 170, 30, 30);
 
-            ctx.fillStyle = randomColor();
-            ctx.fillRect(x, y, width, height);
-        }
+        ctx.beginPath();
+        ctx.moveTo(100, 150);
+        ctx.lineTo(175, 80);
+        ctx.lineTo(250, 150);
+        ctx.closePath();
+        ctx.fillStyle = "brown";
+        ctx.fill();
     </script>
 </body>
 </html>
