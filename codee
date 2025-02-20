@@ -1,50 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Орые Ауыстыру</title>
-	<style>
-		#dregElement {
-			width: 100px;
-			height: 100px;
-			background-color: blue;
-			color: white;
-			text-align: center;
-			line-height: 100px;
-			cursor: grab;
-			position: absolute;
-		}
-	</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>canvas</title>
 </head>
 <body>
-	<div id="dregElement" draggable="true">Сүйре</div>
+    <canvas id="canvas5" width="400" height="300"></canvas>
+    <script>
+        let canvas = document.getElementById("canvas5");
+        let ctx = canvas.getContext("2d");
 
-	<script>
-		let element = document.getElementById("dregElement");
+        function randomColor() {
+            return "#" + Math.floor(Math.random() * 16777215).toString(16);
+        }
 
-		element.onmousedown = function(event) {
-			let shiftX = event.clientX - element.getBoundingClientRect().left;
-			let shiftY = event.clientY - element.getBoundingClientRect().top;
+        for (let i = 0; i < 5; i++) {
+            let x = Math.random() * 300;
+            let y = Math.random() * 200;
+            let width = Math.random() * 100;
+            let height = Math.random() * 100;
 
-			function moveAt(pageX, pageY) {
-				element.style.left = pageX - shiftX + 'px';
-				element.style.top = pageY - shiftY + 'px';
-			}
-
-			function onMouseMove(event) {
-				moveAt(event.pageX, event.pageY);
-			}
-
-			document.addEventListener('mousemove', onMouseMove);
-
-			element.onmouseup = function() {
-				document.removeEventListener('mousemove', onMouseMove);
-				element.onmouseup = null;
-			};
-		};
-
-		element
-	</script>
+            ctx.fillStyle = randomColor();
+            ctx.fillRect(x, y, width, height);
+        }
+    </script>
 </body>
 </html>
