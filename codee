@@ -4,26 +4,31 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Абай Құнанбайұлы</title>
-	<link href="/Users/maksimbiryukov/Desktop/Web/CSS/style2.css" rel="stylesheet" type="text/css">
+	<link href="style3.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<h1 class="text-h1">Абай Құнанбайұлы</h1>
-	<p class="text-p" > 
+	<h1>Абай Құнанбайұлы</h1>
+
+	<h2 id="unique">
 		Абай (Ибраһим) Құнанбайұлы (10 тамыз 1845 жыл — 6 шілде 1904 жыл) — ұстаз, ақын, ағартушы, жазба қазақ әдебиетінің, қазақ әдеби тілінің негізін қалаушы, философ, сазгер, аудармашы, саяси қайраткер, либералды көзқарасын ислам дініне таяна отырып, орыс және еуропа мәдениетімен жақындасу арқылы қазақ мәдениетін жаңартуды көздеген реформатор.
+	</h2>
+
+	<p>
+		Бойы бұлғаң
+	</p>
+
+	<p class="special">
+		Бойы бұлғаң,<br>
+		Сөзі жылмаң<br>
+		Кімді көрсем, мен сонан<br>
+		Бетті бастым,<br>
+	</p>
+
+	<p>
+		Қараңғы үй терезесі — тұтқын орны,v
+		Көгерген көктің жүзі ескі формы.<br>
+		Азат құстар аспанда ойнап ұшса,<br>
+		Ұялып қарай алмас мендей сорлы.<br>
 	</p>
 </body>
 </html>
-
-
-
-.text-h1 {
-	color: blue;
-	font-family: Arial;
-	font-size: 30px;
-}
-
-.text-p {
-	color: red;
-	font-family: Arial;
-	background: yellow;
-}
