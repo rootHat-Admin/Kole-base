@@ -2,35 +2,26 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>form</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>css</title>
+	<style type="text/css">
+
+		.red {
+			color: red;
+		}
+
+		.ligth {
+			color: orange;
+			font-size: 200%;
+		}
+
+	</style>
 </head>
 <body>
-	<h1>Кері байланыс нысаны</h1>
-	<form>
-		<label for="name">Аты</label><br>
-		<input type="text" name="name" placeholder="Аты"required><br><br>
-		<label for="name">email:</label><br>
-		<input type="text" name="name" placeholder="email" required><br><br>
+	<p class="red">CSS</p>
 
-		<label for="radio-teg">Сіз кімсіз?</label><br>
-		<input type="radio" name="radio-teg">
-		<label for="radio-teg">Студент</label><br>
-		<input type="radio" name="radio-teg">
-		<label for="radio-teg">Оқушы</label><br>
-		<input type="radio" name="radio-teg">
-		<label for="radio-teg">Мұғалім</label><br>
+	<p class="ligth">CSS</p>
 
-		<label for="massage">Хабарламалар</label>
-		<textarea name="massage" ></textarea><br><br>
-
-		<label for="city">Қала:</label>
-		<select name="city">
-		<option value="Turkestan">Түркістан</option>
-		  <option value="astana">Астана</option>
-		  <option value="Shymkent">Шымкент</option>
-		</select><br><br>
-
-		<button type="sadmit">Жіберу</button>
-	</form>
+	<h1 class="red">My CSS styles</h1>
 </body>
 </html>
