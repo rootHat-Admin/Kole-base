@@ -3,28 +3,72 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>canvas</title>
+    <title>Canvas Basic Shapes</title>
 </head>
 <body>
-    <canvas id="canvas4" width="400" height="300"></canvas>
+    <canvas id="canvas" width="500" height="400"></canvas>
+    <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Canvas Basic Shapes</title>
+</head>
+<body>
+    <canvas id="canvas" width="500" height="400"></canvas>
     <script>
-        let canvas = document.getElementById("canvas4");
+        let canvas = document.getElementById("canvas");
         let ctx = canvas.getContext("2d");
 
-        ctx.fillStyle = "yellow";
-        ctx.fillRect(100, 150, 150, 100);
-
-        ctx.fillStyle = "blue";
-        ctx.fillRect(130, 170, 30, 30);
-        ctx.fillRect(190, 170, 30, 30);
-
+        // Сызық
         ctx.beginPath();
-        ctx.moveTo(100, 150);
-        ctx.lineTo(175, 80);
-        ctx.lineTo(250, 150);
+        ctx.moveTo(100, 50);
+        ctx.lineTo(300, 50);
+        ctx.strokeStyle = "black";
+        ctx.lineWidth = 2;
+        ctx.stroke();
+
+        // Төртбұрыш
+        ctx.fillStyle = "blue";
+        ctx.fillRect(150, 100, 100, 50);
+
+        // Үшбұрыш
+        ctx.beginPath();
+        ctx.moveTo(200, 200);
+        ctx.lineTo(250, 250);
+        ctx.lineTo(150, 250);
         ctx.closePath();
-        ctx.fillStyle = "brown";
+        ctx.fillStyle = "red";
         ctx.fill();
+
+        // Үшбұрыш 2 
+        ctx.beginPath();
+        ctx.moveTo(300, 250);
+        ctx.lineTo(250, 300);
+        ctx.lineTo(300, 300);
+        ctx.closePath();
+        ctx.fillStyle = "orange";
+        ctx.fill();
+
+        // Шеңбер
+        ctx.beginPath();
+        ctx.arc(70, 200, 40, 0, 2 * Math.PI);
+        ctx.fillStyle = "green";
+        ctx.fill();
+        
+        // Ромб
+        ctx.beginPath();
+        ctx.moveTo(350, 150);
+        ctx.lineTo(400, 200);
+        ctx.lineTo(350, 250);
+        ctx.lineTo(300, 200);
+        ctx.closePath();
+        ctx.fillStyle = "green";
+        ctx.fill();
+
+        // Шаршы
+        ctx.fillStyle = "purple";
+        ctx.fillRect(100, 300, 50, 50);
     </script>
 </body>
 </html>
