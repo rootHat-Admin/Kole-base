@@ -1,45 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>CSS</title>
-	<link href="style.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-	<h1 class="two">Бұл сабақта біз CSS негіздерін үйренетін боламыз</h1>
+<audio controls>
+					<source src="audio.mp3" type="audio/mpeg">
+				</audio>
 
-	<p class="one" >1 абзац</p>
+				<br><br>
 
-	<p class="three">2 абзац</p>
-
-	<p class="two" >3 абзац</p>
-
-	<h2 class="three">Жемістер</h2>
-
-	<ul>
-		<li class="one" >Өрік</li>
-		<li class="two" > Алма </li>
-		<li class="one" > Банандар </li>
-		<li class="two" > Анар </li>
-	</ul>
-
-</body>
-</html>
-
-----------
-
-.one {
-	color: black;
-	background: yellow;
-}
-
-.two {
-	color: yellow;
-	background: green;
-}
-
-.three {
-	color: white;
-	background: black;
-}
+				<video width="90%" controls>
+					<source src="video.mp4" type="video/mp4">
+				</video>
