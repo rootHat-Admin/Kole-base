@@ -1,74 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Canvas Basic Shapes</title>
+	<meta charset="utf-8">
+	<title>form</title>
 </head>
 <body>
-    <canvas id="canvas" width="500" height="400"></canvas>
-    <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Canvas Basic Shapes</title>
-</head>
-<body>
-    <canvas id="canvas" width="500" height="400"></canvas>
-    <script>
-        let canvas = document.getElementById("canvas");
-        let ctx = canvas.getContext("2d");
+	<h1>Кері байланыс нысаны</h1>
+	<form>
+		<label for="name">Аты</label><br>
+		<input type="text" name="name" placeholder="Аты"required><br><br>
+		<label for="name">email:</label><br>
+		<input type="text" name="name" placeholder="email" required><br><br>
 
-        // Сызық
-        ctx.beginPath();
-        ctx.moveTo(100, 50);
-        ctx.lineTo(300, 50);
-        ctx.strokeStyle = "black";
-        ctx.lineWidth = 2;
-        ctx.stroke();
+		<label for="radio-teg">Сіз кімсіз?</label><br>
+		<input type="radio" name="radio-teg">
+		<label for="radio-teg">Студент</label><br>
+		<input type="radio" name="radio-teg">
+		<label for="radio-teg">Оқушы</label><br>
+		<input type="radio" name="radio-teg">
+		<label for="radio-teg">Мұғалім</label><br>
 
-        // Төртбұрыш
-        ctx.fillStyle = "blue";
-        ctx.fillRect(150, 100, 100, 50);
+		<label for="massage">Хабарламалар</label>
+		<textarea name="massage" ></textarea><br><br>
 
-        // Үшбұрыш
-        ctx.beginPath();
-        ctx.moveTo(200, 200);
-        ctx.lineTo(250, 250);
-        ctx.lineTo(150, 250);
-        ctx.closePath();
-        ctx.fillStyle = "red";
-        ctx.fill();
+		<label for="city">Қала:</label>
+		<select name="city">
+		<option value="Turkestan">Түркістан</option>
+		  <option value="astana">Астана</option>
+		  <option value="Shymkent">Шымкент</option>
+		</select><br><br>
 
-        // Үшбұрыш 2 
-        ctx.beginPath();
-        ctx.moveTo(300, 250);
-        ctx.lineTo(250, 300);
-        ctx.lineTo(300, 300);
-        ctx.closePath();
-        ctx.fillStyle = "orange";
-        ctx.fill();
-
-        // Шеңбер
-        ctx.beginPath();
-        ctx.arc(70, 200, 40, 0, 2 * Math.PI);
-        ctx.fillStyle = "green";
-        ctx.fill();
-        
-        // Ромб
-        ctx.beginPath();
-        ctx.moveTo(350, 150);
-        ctx.lineTo(400, 200);
-        ctx.lineTo(350, 250);
-        ctx.lineTo(300, 200);
-        ctx.closePath();
-        ctx.fillStyle = "green";
-        ctx.fill();
-
-        // Шаршы
-        ctx.fillStyle = "purple";
-        ctx.fillRect(100, 300, 50, 50);
-    </script>
+		<button type="sadmit">Жіберу</button>
+	</form>
 </body>
 </html>
