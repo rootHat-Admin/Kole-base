@@ -1,9 +1,4 @@
-<audio controls>
-					<source src="audio.mp3" type="audio/mpeg">
-				</audio>
-
-				<br><br>
-
-				<video width="90%" controls>
-					<source src="video.mp4" type="video/mp4">
-				</video>
+#two {
+	color: wheat;
+	background: brown;
+}
