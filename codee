@@ -3,82 +3,52 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+	<title>button hovers</title>
 	<style type="text/css">
-		* {
-			font-size: 16px;
-
-		}
-		#h1-1 {
-			color: red; 
-			text-shadow: 2px 2px black;"
+		.btn-stop {
+			padding: 20px 10px;
+			background-color: white;
+			border-color: red;
+			border-radius: 200px;
 		}
 
-		#h1-2 {
-			padding: 10px;
-			background: linear-gradient(yellow, red);
-			color: red; 
-			text-shadow: 2px 2px black;
-			box-shadow: 2px 2px black;
+		.btn-stop:hover {
+			padding: 20px 10px;
+			background-color: red;
+			border-color: red;
+			border-radius: 200px;
 		}
 
-		#h1-3 {
-			padding: 10px;
-			background: linear-gradient(to right, DarkBlue, LightSteelBlue);
-			border: 1px solid black;
-			color: white; 
-			text-shadow: 2px 2px red;
-			box-shadow: 2px 2px;
-			box-shadow: 2px 2px black;
+		.btn-wait {
+			padding: 20px 12px;
+			background-color: white;
+			border-color: yellow;
+			border-radius: 200px;
+			
 		}
 
-		#button {
-			background: linear-gradient(LimeGreen, LightGreen);
-			box-shadow: 2px 2px 7px black;
+		.btn-wait:hover {
+			background-color: yellow;
+			border-color: yellow;
 		}
 
-		#button:active {
-            background: linear-gradient(SeaGreen, DarkGreen);
-            box-shadow: 0 1px 4px black;
-            color: white;
-        }
-
-		#h1-4 {
-			padding: 10px;
-			background: linear-gradient(to right, Purple, Fuchsia);
-			border: 1px solid black;
-			color: white; 
-			text-shadow: 3px 3px 10px black;
-			box-shadow: 2px 2px 10px black;
+		.btn-go {
+			padding: 20px 18px;
+			background-color: white;
+			border-color: green;
+			border-radius: 200px;
+			
 		}
 
-		#h1-5 {
-			padding: 10px;
-			background: linear-gradient(to right, Red, DarkRed);
-			border: 1px solid black;
-			color: white; 
-			box-shadow: 4px 5px 10px black;
-
-			background: -webkit-linear-gradient(MidnightBlue, yellow);
-		  -webkit-background-clip: text;
-		  -webkit-text-fill-color: transparent;
+		.btn-go:hover {
+			background-color: green;
+			border-color: green;
 		}
-
 	</style>
 </head>
 <body>
-
-	<h1 id="h1-1"> Мәтін 1 </h1>
-
-	<h1 id="h1-2"> Мәтін 2 </h1>
-
-	<h1 id="h1-3"> Мәтін 3 </h1>
-
-	<button id="button" type="button">Түйме</button>
-
-	<h1 id="h1-4"> Мәтін 4 </h1>
-
-	<h1 id="h1-5"> Мәтін 5 </h1>
-
+	<button class="btn-stop"> STOP </button> <br><br>
+	<button class="btn-wait"> WAIT </button> <br><br>
+	<button class="btn-go"> GO </button>
 </body>
 </html>
