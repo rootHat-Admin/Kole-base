@@ -5,26 +5,50 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 	<style type="text/css">
+		* {
+			font-size: 16px;
+		}
 		#h1-1 {
 			color: red; 
 			text-shadow: 2px 2px black;"
 		}
 
 		#h1-2 {
+			padding: 10px;
 			background: linear-gradient(yellow, red);
 			color: red; 
-			text-shadow: 2px 2px black;"
+			text-shadow: 2px 2px black;
+			box-shadow: 2px 2px black;
 		}
 
 		#h1-3 {
-			background: linear-gradient(yellow, red);
+			padding: 10px;
+			background: linear-gradient(to right, DarkBlue, LightSteelBlue);
 			border: 1px solid black;
-			color: red; 
-			text-shadow: 2px 2px black;"
+			color: white; 
+			text-shadow: 2px 2px red;
+			box-shadow: 2px 2px;
+			box-shadow: 2px 2px black;
 		}
 
 		#button {
-			background: linear-gradient(yellow, red);
+			background: linear-gradient(LimeGreen, LightGreen);
+			box-shadow: 2px 2px 7px black;
+		}
+
+		#button:active {
+            background: linear-gradient(SeaGreen, DarkGreen);
+            box-shadow: 0 1px 4px black;
+            color: white;
+        }
+
+		#h1-4 {
+			padding: 10px;
+			background: linear-gradient(to right, Purple, Fuchsia);
+			border: 1px solid black;
+			color: white; 
+			text-shadow: 3px 3px 10px black;
+			box-shadow: 2px 2px 10px black;
 		}
 	</style>
 </head>
@@ -36,6 +60,8 @@
 	<h1 id="h1-3"> Мәтін 3 </h1>
 
 	<button id="button" type="button">Түйме</button>
+
+	<h1 id="h1-4"> Мәтін 4 </h1>
 
 </body>
 </html>
