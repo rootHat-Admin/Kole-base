@@ -7,6 +7,7 @@
 	<style type="text/css">
 		* {
 			font-size: 16px;
+
 		}
 		#h1-1 {
 			color: red; 
@@ -50,9 +51,23 @@
 			text-shadow: 3px 3px 10px black;
 			box-shadow: 2px 2px 10px black;
 		}
+
+		#h1-5 {
+			padding: 10px;
+			background: linear-gradient(to right, Red, DarkRed);
+			border: 1px solid black;
+			color: white; 
+			box-shadow: 4px 5px 10px black;
+
+			background: -webkit-linear-gradient(MidnightBlue, yellow);
+		  -webkit-background-clip: text;
+		  -webkit-text-fill-color: transparent;
+		}
+
 	</style>
 </head>
 <body>
+
 	<h1 id="h1-1"> Мәтін 1 </h1>
 
 	<h1 id="h1-2"> Мәтін 2 </h1>
@@ -62,6 +77,8 @@
 	<button id="button" type="button">Түйме</button>
 
 	<h1 id="h1-4"> Мәтін 4 </h1>
+
+	<h1 id="h1-5"> Мәтін 5 </h1>
 
 </body>
 </html>
