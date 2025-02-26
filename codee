@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#h1-1 {
+			color: red; 
+			text-shadow: 2px 2px black;"
+		}
 
+		#h1-2 {
+			background: linear-gradient(yellow, red);
+			color: red; 
+			text-shadow: 2px 2px black;"
+		}
+
+		#h1-3 {
+			background: linear-gradient(yellow, red);
+			border: 1px solid black;
+			color: red; 
+			text-shadow: 2px 2px black;"
+		}
+
+		#button {
+			background: linear-gradient(yellow, red);
+		}
+	</style>
+</head>
+<body>
+	<h1 id="h1-1"> Мәтін 1 </h1>
+
+	<h1 id="h1-2"> Мәтін 2 </h1>
+
+	<h1 id="h1-3"> Мәтін 3 </h1>
+
+	<button id="button" type="button">Түйме</button>
+
+</body>
+</html>
