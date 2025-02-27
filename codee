@@ -3,52 +3,52 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>button hovers</title>
-	<style type="text/css">
-		.btn-stop {
-			padding: 20px 10px;
-			background-color: white;
-			border-color: red;
-			border-radius: 200px;
-		}
-
-		.btn-stop:hover {
-			padding: 20px 10px;
-			background-color: red;
-			border-color: red;
-			border-radius: 200px;
-		}
-
-		.btn-wait {
-			padding: 20px 12px;
-			background-color: white;
-			border-color: yellow;
-			border-radius: 200px;
-			
-		}
-
-		.btn-wait:hover {
-			background-color: yellow;
-			border-color: yellow;
-		}
-
-		.btn-go {
-			padding: 20px 18px;
-			background-color: white;
-			border-color: green;
-			border-radius: 200px;
-			
-		}
-
-		.btn-go:hover {
-			background-color: green;
-			border-color: green;
-		}
-	</style>
+	<title>CSS Қаріптер</title>
+	<link rel="stylesheet" type="text/css" href="style5.css">
 </head>
 <body>
-	<button class="btn-stop"> STOP </button> <br><br>
-	<button class="btn-wait"> WAIT </button> <br><br>
-	<button class="btn-go"> GO </button>
+	<h1> Қаріптерді қолдану </h1>
+	<p class="serif"> Бұл мәтінде serif қаріпі қолданылады. </p>
+	<p class="sans-serif"> Бұл мәтінде sans-serif қаріпі қолданылады.</p>
+	<p class="cursive"> Бұл мәтін cursive стилінде. </p>
+	<p class="monospace"> Бұл мәтін monospace қаріпімен. </p>
 </body>
 </html>
+
+
+-------
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f4;
+	padding: 20px;
+}
+
+h1 {
+	text-align: center;
+	font-size: 32px;
+	font-weight: bold;
+}
+
+.serif {
+    font-family: "Time New Roman" serif;
+    font-size: 20px;
+}
+
+.sans-serif {   
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: darkblue;   
+}   
+
+.cursive {
+    font-family: "Comic Sans MS", cursive;
+    font-size: 20px;
+    color: darkblue;
+}
+
+.monospace {
+    font-family: "Courier New", monospace;
+    font-size: 20px;
+    color: darkgreen;
+}
