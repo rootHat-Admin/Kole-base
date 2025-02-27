@@ -1,28 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="kk">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Animations</title>
-	<style type="text/css">
-        .ball {
-            width: 50px;
-            height: 50px;
-            background-color: blue;
-            border-radius: 50%;
-            animation: spin 5s linear infinite alternate-reverse;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Жалжымалы Қорап</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
         }
-        @keyframes spin {
-            from {
-                transform: rotate(0deg);
-            }
-            to {
-                transform: rotate(360deg);
-            }
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: absolute;
+            animation: moveBox 4s infinite alternate ease-in-out, changeColor 4s infinite alternate;
         }
-	</style>
+        @keyframes moveBox {
+            0% { left: 0; top: 50%; transform: translateY(-50%); }
+            100% { left: calc(100% - 100px); top: 50%; transform: translateY(-50%); }
+        }
+        @keyframes changeColor {
+            0% { background-color: tomato; }
+            30% { background-color: blue; }
+            60% { background-color: green; }
+            100% { background-color: yellow; }
+        }
+    </style>
 </head>
 <body>
-	<div class="ball"></div> 
+    <div class="box"></div>
 </body>
 </html>
