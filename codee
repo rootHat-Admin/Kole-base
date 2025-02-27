@@ -18,11 +18,9 @@
             height: 100px;
             background-color: red;
             position: absolute;
-            animation: moveBox 4s infinite alternate ease-in-out, changeColor 4s infinite alternate, scaleBox 2s infinite alternate;
+            animation: moveBox 4s infinite alternate ease-in-out, changeColor 4s infinite alternate, scaleBox 1s infinite alternate;
         }
-        @keyframes moveBox {
-            0% { left: 0; top: 50%; transform: translateY(-50%); }
-            100% { left: calc(100% - 100px); top: 50%; transform: translateY(-50%); }
+       
         }
         @keyframes changeColor {
             0% { background-color: red; }
@@ -31,24 +29,12 @@
             100% { background-color: yellow; }
         }
         @keyframes scaleBox {
-            0% { width: 100px; height: 100px; }
-            100% { width: 200px; height: 200px; }
+            0%, 100% { width: 100px; height: 100px; }
+            50% { width: 200px; height: 200px; }
         }
     </style>
 </head>
 <body>
     <div class="box"></div>
-    <script>
-        let count = 0;
-        const maxCycles = 10;
-        const box = document.querySelector('.box');
-        
-        box.addEventListener('animationiteration', () => {
-            count++;
-            if (count >= maxCycles) {
-                box.style.animation = 'none';
-            }
-        });
-    </script>
 </body>
 </html>
