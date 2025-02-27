@@ -3,52 +3,24 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>CSS Қаріптер</title>
-	<link rel="stylesheet" type="text/css" href="style5.css">
+	<title>Animations</title>
+	<style type="text/css">
+		body {
+            background-color: black;
+        }
+
+        .light-text {
+            color: white;
+            animation: blink 2s infinite alternate;
+        }
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+
+		
+	</style>
 </head>
 <body>
-	<h1> Қаріптерді қолдану </h1>
-	<p class="serif"> Бұл мәтінде serif қаріпі қолданылады. </p>
-	<p class="sans-serif"> Бұл мәтінде sans-serif қаріпі қолданылады.</p>
-	<p class="cursive"> Бұл мәтін cursive стилінде. </p>
-	<p class="monospace"> Бұл мәтін monospace қаріпімен. </p>
+	<div class="light-text"> CSS Анимациясы</div> 
 </body>
 </html>
-
-
--------
-
-body {
-	font-family: Arial, sans-serif;
-	background-color: #f4f4f4;
-	padding: 20px;
-}
-
-h1 {
-	text-align: center;
-	font-size: 32px;
-	font-weight: bold;
-}
-
-.serif {
-    font-family: "Time New Roman" serif;
-    font-size: 20px;
-}
-
-.sans-serif {   
-    font-family: Arial, sans-serif;
-    font-size: 20px;
-    color: darkblue;   
-}   
-
-.cursive {
-    font-family: "Comic Sans MS", cursive;
-    font-size: 20px;
-    color: darkblue;
-}
-
-.monospace {
-    font-family: "Courier New", monospace;
-    font-size: 20px;
-    color: darkgreen;
-}
