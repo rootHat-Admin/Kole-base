@@ -14,7 +14,8 @@
             animation: blink 2s infinite alternate;
         }
         @keyframes blink {
-            50% { opacity: 0; }
+            0% { opacity: 0; text-shadow: 0 0 1px white; }
+            100% { opacity: 1; text-shadow: 0 0 2px white, 0 0 3px white, 0 0 6px white; }        
         }
 
 		
