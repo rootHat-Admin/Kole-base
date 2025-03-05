@@ -1,40 +1,38 @@
 <!DOCTYPE html>
 <html lang="kk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Жалжымалы Қорап</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
-            overflow: hidden;
-        }
-        .box {
-            width: 100px;
-            height: 100px;
-            background-color: red;
-            position: absolute;
-            animation: moveBox 4s infinite alternate ease-in-out, changeColor 4s infinite alternate, scaleBox 1s infinite alternate;
-        }
-       
-        }
-        @keyframes changeColor {
-            0% { background-color: red; }
-            33% { background-color: blue; }
-            66% { background-color: green; }
-            100% { background-color: yellow; }
-        }
-        @keyframes scaleBox {
-            0%, 100% { width: 100px; height: 100px; }
-            50% { width: 200px; height: 200px; }
-        }
-    </style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ul</title>
+	<link rel="stylesheet" type="text/css" href="style7.css">
+	<style type="text/css">
+		ul.a {
+			list-style-type: circle;
+		}
+
+		ul.b {
+			color: green;
+			list-style-type: square;
+		}
+	</style>
 </head>
 <body>
-    <div class="box"></div>
+	<h1>Тағамдар</h1>
+	<ul class="a">
+		<li>Бешбармақ</li>
+		<li>Куырдак</li>
+		<li>Сорпа</li>
+		<li>Кеспе</li>
+		<li>Нарын</li>
+	</ul>
+
+	<ul class="b">
+		<li>Бешбармақ</li>
+		<li>Куырдак</li>
+		<li>Сорпа</li>
+		<li>Кеспе</li>
+		<li>Нарын</li>
+
+	</ul>
 </body>
 </html>
