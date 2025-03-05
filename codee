@@ -5,16 +5,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>table</title>
 	<style>
+		body {
+			margin: 0px;
+			padding: 50px;
+			text-align: center;
+		}
 		table {
 			border-collapse: collapse;
 			width: 100%;
-			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 				}
 
 		th, td {
-			padding: 8px;
-			text-align: left;
-			border: 1px solid #ddd;
+			padding: 15px;
+			
+			border: 2px solid orange;
+			border-style: dashed 
 		}
 
 		tr:nth-child(even) {
@@ -30,6 +36,10 @@
 			background-color: #ddd;
 		}
 
+		h1 {
+			text-align: center;
+		}
+
 	</style>
 </head>
 <body>
@@ -43,60 +53,60 @@
 
 		<tr>
 			<td>1</td>
-			<td>Ернур</td>
+			<td>Серік Ернур</td>
 			<td rowspan="3">Информатика</td>
 		</tr>
 
 		<tr>
 			<td>2</td>
-			<td>Қыдыралі</td>
+			<td> ӘлімжанҚыдыралі</td>
 			
 		</tr>
 
 		<tr>
 			<td>3</td>
-			<td>Ысматулла</td>
+			<td>Гулмохаммедулы Ысматулла</td>
 			
 		</tr>
 
 		<tr>
 			<td>4</td>
-			<td>Максим</td>
+			<td>Бирюков Максим</td>
 			<td rowspan="3">Веб-site кұру</td>
 		</tr>
 
 		<tr>
 			<td>5</td>
-			<td>Абдукадир</td>
+			<td>Мирзаханов Абдукадир</td>
 			
 		</tr>
 
 		<tr>
 			<td>6</td>
-			<td>Шерзод</td>
+			<td>Навоиев Диярбек</td>
 			
 		</tr>
 
 		<tr>
 			<td>7</td>
-			<td>Аслан</td>
+			<td>Уразалин Аслан</td>
 			<td rowspan="4">Веб дезайн</td>
 		</tr>
 
 		<tr>
 			<td>8</td>
-			<td>Жанболат</td>
+			<td>Тінейбай Жанболат</td>
 		</tr>
 
 		<tr>
 			<td>9</td>
-			<td>Багдаулет</td>
+			<td>Арысбай Багдаулет</td>
 			
 		</tr>
 
 		<tr>
 			<td>10</td>
-			<td>Дәулет</td>
+			<td>Айтжанов Дәулет</td>
 		</tr>
 	</table>
 </body>
