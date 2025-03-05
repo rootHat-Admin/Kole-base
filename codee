@@ -33,7 +33,7 @@
 	</style>
 </head>
 <body>
-	<h1>Топтар тізімі</h1>
+	<h1 style="text-align: center;">Топтар тізімі</h1>
 	<table>
 		<tr>
 			<th>№</th>
@@ -44,61 +44,59 @@
 		<tr>
 			<td>1</td>
 			<td>Ернур</td>
-			<td >Информатика</td>
+			<td rowspan="3">Информатика</td>
 		</tr>
 
 		<tr>
 			<td>2</td>
 			<td>Қыдыралі</td>
-			<td>Веб дезайн</td>
+			
 		</tr>
 
 		<tr>
 			<td>3</td>
 			<td>Ысматулла</td>
-			<td>Информатика</td>
+			
 		</tr>
 
 		<tr>
 			<td>4</td>
 			<td>Максим</td>
-			<td>Информатика</td>
+			<td rowspan="3">Веб-site кұру</td>
 		</tr>
 
 		<tr>
 			<td>5</td>
 			<td>Абдукадир</td>
-			<td>Информатика</td>
+			
 		</tr>
 
 		<tr>
 			<td>6</td>
 			<td>Шерзод</td>
-			<td>Веб-site кұру</td>
+			
 		</tr>
 
 		<tr>
 			<td>7</td>
 			<td>Аслан</td>
-			<td>Веб-site кұру</td>
+			<td rowspan="4">Веб дезайн</td>
 		</tr>
 
 		<tr>
 			<td>8</td>
 			<td>Жанболат</td>
-			<td>Веб-site кұру</td>
 		</tr>
 
 		<tr>
 			<td>9</td>
 			<td>Багдаулет</td>
-			<td>Веб дезайн</td>
+			
 		</tr>
 
 		<tr>
 			<td>10</td>
 			<td>Дәулет</td>
-			<td>Веб дезайн</td>
 		</tr>
 	</table>
 </body>
