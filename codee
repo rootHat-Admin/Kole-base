@@ -1,48 +1,105 @@
 <!DOCTYPE html>
-<html lang="kk">
+<html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>ul</title>
-	<link rel="stylesheet" type="text/css" href="style7.css">
-	<style type="text/css">
-		ul.a {
-			list-style-type: circle;
+	<title>table</title>
+	<style>
+		table {
+			border-collapse: collapse;
+			width: 100%;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+				}
+
+		th, td {
+			padding: 8px;
+			text-align: left;
+			border: 1px solid #ddd;
 		}
 
-		ul.b {
-			color: green;
-			list-style-image: url('121.jpg');
+		tr:nth-child(even) {
+			background-color: #f2f2f2;
 		}
 
-		.c {
-			color: green;
-			list-style-image: url('131.jpg');
+		th {
+			background-color: #1E90FF;
+			color: white;
 		}
 
-		.d {
-			color: green;
-			list-style-image: url('151.jpg');
+		td:hover {
+			background-color: #ddd;
 		}
+
 	</style>
 </head>
 <body>
-	<h1>Тағамдар</h1>
-	<ul class="a">
-		<li>Бешбармақ</li>
-		<li>Куырдак</li>
-		<li>Сорпа</li>
-		<li>Кеспе</li>
-		<li>Нарын</li>
-	</ul>
+	<h1>Топтар тізімі</h1>
+	<table>
+		<tr>
+			<th>№</th>
+			<th>Аты-Жоні</th>
+			<th>Пән</th>
+		</tr>
 
-	<ul class="b">
-		<li class="c">Бешбармақ</li>
-		<li class="d">Куырдак</li>
-		<li>Сорпа</li>
-		<li>Кеспе</li>
-		<li>Нарын</li>
-	</ul>
+		<tr>
+			<td>1</td>
+			<td>Ернур</td>
+			<td >Информатика</td>
+		</tr>
 
+		<tr>
+			<td>2</td>
+			<td>Қыдыралі</td>
+			<td>Веб дезайн</td>
+		</tr>
+
+		<tr>
+			<td>3</td>
+			<td>Ысматулла</td>
+			<td>Информатика</td>
+		</tr>
+
+		<tr>
+			<td>4</td>
+			<td>Максим</td>
+			<td>Информатика</td>
+		</tr>
+
+		<tr>
+			<td>5</td>
+			<td>Абдукадир</td>
+			<td>Информатика</td>
+		</tr>
+
+		<tr>
+			<td>6</td>
+			<td>Шерзод</td>
+			<td>Веб-site кұру</td>
+		</tr>
+
+		<tr>
+			<td>7</td>
+			<td>Аслан</td>
+			<td>Веб-site кұру</td>
+		</tr>
+
+		<tr>
+			<td>8</td>
+			<td>Жанболат</td>
+			<td>Веб-site кұру</td>
+		</tr>
+
+		<tr>
+			<td>9</td>
+			<td>Багдаулет</td>
+			<td>Веб дезайн</td>
+		</tr>
+
+		<tr>
+			<td>10</td>
+			<td>Дәулет</td>
+			<td>Веб дезайн</td>
+		</tr>
+	</table>
 </body>
 </html>
