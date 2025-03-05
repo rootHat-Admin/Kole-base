@@ -15,14 +15,14 @@
 			list-style-image: url('121.jpg');
 		}
 
-		.b {
-			color: green;
-			list-style-image: url('121.jpg');
-		}
-
 		.c {
 			color: green;
 			list-style-image: url('131.jpg');
+		}
+
+		.d {
+			color: green;
+			list-style-image: url('151.jpg');
 		}
 	</style>
 </head>
@@ -36,13 +36,13 @@
 		<li>Нарын</li>
 	</ul>
 
-	<ul>
-		<li class="b">Бешбармақ</li>
-		<li class="c">Куырдак</li>
+	<ul class="b">
+		<li class="c">Бешбармақ</li>
+		<li class="d">Куырдак</li>
 		<li>Сорпа</li>
 		<li>Кеспе</li>
 		<li>Нарын</li>
-
 	</ul>
+
 </body>
 </html>
