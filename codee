@@ -3,100 +3,63 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>form and opacity</title>
-	<link rel="stylesheet" type="text/css" href="style8.css">
+	<title>site</title>
 
-	<style type="text/css">
-		body {
-    background-image: url("555.png");
-    background-size: cover;
-    font-family: Arial, sans-serif;
-    height: 100vh;
-    margin: 0;
-    justify-content: center;
-    align-items: center;
-}
-
-.forma {
-    background-color: rgba(0, 255, 255, 0.8);
-    padding: 100px;
-    max-width: 200px;
-    border: 1px solid black;
-    box-shadow: 1px 2px 12px black;
-    border-radius: 20px;
-    font-size: 15px;
-    text-align: center;
-}
-
-.forma h1 {
-    margin-bottom: 10px;
-}
-
-.forma label {
-    text-align: left;
-    font-weight: bold;
-    display: block;
-}
-
-.forma input {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.forma button {
-    background-color: #008CBA;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    margin-top: 10px;
-}
-
-.forma button:hover {
-    background-color: #005f73;
-}
-
-#reser {
-    background-color: tomato;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    margin-top: 10px;
-}
-
-#reser:hover {
-    background-color: #005f73;
-}
-
-
-
-
-	</style>
+	<style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; }
+        header { background: #333; color: white; padding: 15px; display: flex; justify-content: space-between; align-items: center; }
+        nav a { color: white; text-decoration: none; margin: 0 10px; }
+        main { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 20px; }
+        .block { border: 1px solid #ddd; padding: 15px; text-align: center; }
+        .block img { max-width: 100%; height: auto; }
+        .block button { margin-top: 10px; padding: 10px; background: #28a745; color: white; border: none; cursor: pointer; }
+        footer { background: #333; color: white; text-align: center; padding: 10px; margin-top: 20px; }
+    </style>
 </head>
 <body>
-	<div class="forma"> 
-        <h1>Тіркеу</h1><br><br>
-        <form action="php" method="post"> 
-            <label for="name">Аты:</label><br>
-            <input type="text" id="name" name="name" placeholder="Сіздің атыңыз" required><br><br>
-            
-            <label for="email">Почта:</label><br>
-            <input type="email" id="email" name="email" placeholder="Сіздің почтаңыз" required><br><br>
-            
-            <label for="password">Пароль:</label><br>
-            <input type="password" id="password" name="password" placeholder="Пароль" required><br><br>
-            
-            <button type="submit">Тіркелу</button>
-            <button id="reser" type="reset">Өшіру</button>
-        </form>
-    </div>
+    <header>
+        <div class="logo">Логотип</div>
+        <nav>
+            <a href="#">Главная</a>
+            <a href="#">О нас</a>
+            <a href="#">Контакты</a>
+        </nav>
+    </header>
+    <main>
+        <div class="block">
+            <img src="https://via.placeholder.com/150" alt="Товар">
+            <p>Цена: 1000 руб.</p>
+            <button>Купить</button>
+        </div>
+        <div class="block">
+            <img src="https://via.placeholder.com/150" alt="Товар">
+            <p>Цена: 1200 руб.</p>
+            <button>Купить</button>
+        </div>
+        <div class="block">
+            <img src="https://via.placeholder.com/150" alt="Товар">
+            <p>Цена: 900 руб.</p>
+            <button>Купить</button>
+        </div>
+        <div class="block">
+            <img src="https://via.placeholder.com/150" alt="Товар">
+            <p>Цена: 1100 руб.</p>
+            <button>Купить</button>
+        </div>
+        <div class="block">
+            <img src="https://via.placeholder.com/150" alt="Товар">
+            <p>Цена: 1300 руб.</p>
+            <button>Купить</button>
+        </div>
+        <div class="block">
+            <img src="https://via.placeholder.com/150" alt="Товар">
+            <p>Цена: 1400 руб.</p>
+            <button>Купить</button>
+        </div>
+    </main>
+    <footer>
+        &copy; 2025 Все права защищены
+    </footer>
 </body>
 </html>
