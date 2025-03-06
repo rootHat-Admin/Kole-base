@@ -1,113 +1,72 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>table</title>
-	<style>
-		body {
-			margin: 0px;
-			padding: 50px;
-			text-align: center;
-		}
-		table {
-			border-collapse: collapse;
-			width: 100%;
-			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-				}
-
-		th, td {
-			padding: 15px;
-			
-			border: 2px solid orange;
-			border-style: dashed 
-		}
-
-		tr:nth-child(even) {
-			background-color: #f2f2f2;
-		}
-
-		th {
-			background-color: #1E90FF;
-			color: white;
-		}
-
-		td:hover {
-			background-color: #ddd;
-		}
-
-		h1 {
-			text-align: center;
-		}
-
-	</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Image Pyramid</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            width: 100vw;
+            text-align: center;
+            padding-top: 20px;
+        }
+        
+        .row {
+            width: 100%;
+            text-align: center;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+        
+        .row img {
+            width: 150px;
+            height: 150px;
+            margin: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            transition: box-shadow 0.3s ease-in-out;
+            float: left;
+        }
+        
+        .row img:hover {
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+        }
+        
+        .center {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
 </head>
 <body>
-	<h1 style="text-align: center;">Топтар тізімі</h1>
-	<table>
-		<tr>
-			<th>№</th>
-			<th>Аты-Жоні</th>
-			<th>Пән</th>
-		</tr>
-
-		<tr>
-			<td>1</td>
-			<td>Серік Ернур</td>
-			<td rowspan="3">Информатика</td>
-		</tr>
-
-		<tr>
-			<td>2</td>
-			<td> ӘлімжанҚыдыралі</td>
-			
-		</tr>
-
-		<tr>
-			<td>3</td>
-			<td>Гулмохаммедулы Ысматулла</td>
-			
-		</tr>
-
-		<tr>
-			<td>4</td>
-			<td>Бирюков Максим</td>
-			<td rowspan="3">Веб-site кұру</td>
-		</tr>
-
-		<tr>
-			<td>5</td>
-			<td>Мирзаханов Абдукадир</td>
-			
-		</tr>
-
-		<tr>
-			<td>6</td>
-			<td>Навоиев Диярбек</td>
-			
-		</tr>
-
-		<tr>
-			<td>7</td>
-			<td>Уразалин Аслан</td>
-			<td rowspan="4">Веб дезайн</td>
-		</tr>
-
-		<tr>
-			<td>8</td>
-			<td>Тінейбай Жанболат</td>
-		</tr>
-
-		<tr>
-			<td>9</td>
-			<td>Арысбай Багдаулет</td>
-			
-		</tr>
-
-		<tr>
-			<td>10</td>
-			<td>Айтжанов Дәулет</td>
-		</tr>
-	</table>
+    <div class="container">
+        <div class="row center">
+            <img src="111.png">
+            <img src="222.png">
+        </div>
+        <div class="row center">
+            <img src="333.jpg">
+            <img src="444.png">
+            <img src="555.png">
+        </div>
+        <div class="row center">
+            <img src="666.jpg">
+            <img src="777.png">
+            <img src="888.jpg">
+            <img src="999.png">
+        </div>
+        <div class="row center">
+            <img src="444.png">
+            <img src="777.png">
+            <img src="333.jpg">
+            <img src="111.png">
+            <img src="555.png">
+        </div>
+    </div>
 </body>
 </html>
