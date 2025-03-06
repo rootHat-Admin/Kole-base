@@ -1,57 +1,102 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Opacity </title>
-    <style type="text/css">
-        .container {
-            position: relative;
-            width: 100%;
-            max-width: 800px;
-            margin: 20px auto;
-            border: 2px solid black;
-        }
-        
-        .container img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        
-        .overlay {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 100px;
-            text-shadow: 1px 2px 10px black;
-            font-weight: bold;
-            color: wheat;
-            opacity: 0.0;
-            transition: opacity 0.5s;
-        }
-        
-        .overlay:hover {
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>form and opacity</title>
+	<link rel="stylesheet" type="text/css" href="style8.css">
 
-            opacity: 1;
-        }
-    </style>
+	<style type="text/css">
+		body {
+    background-image: url("555.png");
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.forma {
+    background-color: rgba(0, 255, 255, 0.8);
+    padding: 100px;
+    max-width: 200px;
+    border: 1px solid black;
+    box-shadow: 1px 2px 12px black;
+    border-radius: 20px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.forma h1 {
+    margin-bottom: 10px;
+}
+
+.forma label {
+    text-align: left;
+    font-weight: bold;
+    display: block;
+}
+
+.forma input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.forma button {
+    background-color: #008CBA;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.forma button:hover {
+    background-color: #005f73;
+}
+
+#reser {
+    background-color: tomato;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#reser:hover {
+    background-color: #005f73;
+}
+
+
+
+
+	</style>
 </head>
 <body>
-    <div class="container">
-        <img src="fut.jpg" alt="Футбол">
-        <div class="overlay">Футбол</div>
-    </div>
-    
-    <div class="container">
-        <img src="bas.jpg" alt="Баскетбол">
-        <div class="overlay">Баскетбол</div>
-    </div>
-    
-    <div class="container">
-        <img src="vali.jpg" alt="Волейбол">
-        <div class="overlay">Волейбол</div>
+	<div class="forma"> 
+        <h1>Тіркеу</h1><br><br>
+        <form action="php" method="post"> 
+            <label for="name">Аты:</label><br>
+            <input type="text" id="name" name="name" placeholder="Сіздің атыңыз" required><br><br>
+            
+            <label for="email">Почта:</label><br>
+            <input type="email" id="email" name="email" placeholder="Сіздің почтаңыз" required><br><br>
+            
+            <label for="password">Пароль:</label><br>
+            <input type="password" id="password" name="password" placeholder="Пароль" required><br><br>
+            
+            <button type="submit">Тіркелу</button>
+            <button id="reser" type="reset">Өшіру</button>
+        </form>
     </div>
 </body>
 </html>
