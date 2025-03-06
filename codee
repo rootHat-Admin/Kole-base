@@ -5,51 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Opacity </title>
     <style type="text/css">
-        .background {
+        .container {
             position: relative;
-            display: inline-block;
-            margin: 10px;
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            border: 2px solid black;
         }
-        .background img {
-            width: 300px;
-            height: 200px;
+        
+        .container img {
+            width: 100%;
+            height: auto;
             display: block;
         }
-        .transbox {
+        
+        .overlay {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background: rgba(255, 255, 255, 0);
-            padding: 10px;
-        }
-        .transbox p {
-            font-size: 20px;
-            color: black;
-            opacity: 0.6;
+            font-size: 100px;
+            text-shadow: 1px 2px 10px black;
             font-weight: bold;
-            text-align: center;
+            color: wheat;
+            opacity: 0.0;
+            transition: opacity 0.5s;
+        }
+        
+        .overlay:hover {
+
+            opacity: 1;
         }
     </style>
 </head>
 <body>
-    <div class="background">
+    <div class="container">
         <img src="fut.jpg" alt="Футбол">
-        <div class="transbox">
-            <p>Футбол</p>
-        </div>
+        <div class="overlay">Футбол</div>
     </div>
-    <div class="background">
+    
+    <div class="container">
         <img src="bas.jpg" alt="Баскетбол">
-        <div class="transbox">
-            <p>Баскетбол</p>
-        </div>
+        <div class="overlay">Баскетбол</div>
     </div>
-    <div class="background">
-        <img src="vali.jpg" alt="Теннис">
-        <div class="transbox">
-            <p>Теннис</p>
-        </div>
+    
+    <div class="container">
+        <img src="vali.jpg" alt="Волейбол">
+        <div class="overlay">Волейбол</div>
     </div>
 </body>
 </html>
