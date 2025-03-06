@@ -3,69 +3,52 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Image Pyramid</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
+    <title> Opacity </title>
+    <style type="text/css">
+        .background {
+            position: relative;
+            display: inline-block;
+            margin: 10px;
         }
-        
-        .container {
-            width: 100vw;
+        .background img {
+            width: 300px;
+            height: 200px;
+            display: block;
+        }
+        .transbox {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255, 255, 255, 0);
+            padding: 10px;
+        }
+        .transbox p {
+            font-size: 20px;
+            color: black;
+            opacity: 0.6;
+            font-weight: bold;
             text-align: center;
-            padding-top: 20px;
-        }
-        
-        .row {
-            width: 100%;
-            text-align: center;
-            overflow: hidden;
-            margin-bottom: 10px;
-        }
-        
-        .row img {
-            width: 150px;
-            height: 150px;
-            margin: 5px;
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-            transition: box-shadow 0.3s ease-in-out;
-            float: left;
-        }
-        
-        .row img:hover {
-            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
-        }
-        
-        .center {
-            display: flex;
-            justify-content: center;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="row center">
-            <img src="111.png">
-            <img src="222.png">
+    <div class="background">
+        <img src="fut.jpg" alt="Футбол">
+        <div class="transbox">
+            <p>Футбол</p>
         </div>
-        <div class="row center">
-            <img src="333.jpg">
-            <img src="444.png">
-            <img src="555.png">
+    </div>
+    <div class="background">
+        <img src="bas.jpg" alt="Баскетбол">
+        <div class="transbox">
+            <p>Баскетбол</p>
         </div>
-        <div class="row center">
-            <img src="666.jpg">
-            <img src="777.png">
-            <img src="888.jpg">
-            <img src="999.png">
-        </div>
-        <div class="row center">
-            <img src="444.png">
-            <img src="777.png">
-            <img src="333.jpg">
-            <img src="111.png">
-            <img src="555.png">
+    </div>
+    <div class="background">
+        <img src="vali.jpg" alt="Теннис">
+        <div class="transbox">
+            <p>Теннис</p>
         </div>
     </div>
 </body>
