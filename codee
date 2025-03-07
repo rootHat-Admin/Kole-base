@@ -3,126 +3,62 @@
 <head>
 <style>
 	body {
-		margin: 0px;
-	}
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    }
 
-	ul {
-	  list-style-type: none;
-	  margin: 0;
-	  padding: 0;
-	  overflow: hidden;
-	  background-color: #333;
-	}
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgba(51, 51, 51, 0.8);
+    }
 
-	li {
-	  float: left;
-	  border-right:1px solid #bbb;
-	}
+    li {
+        float: left;
+        border-right: 1px solid #bbb;
+    }
 
-	li a {
-	  display: block;
-	  color: white;
-	  text-align: center;
-	  padding: 14px 16px;
-	  text-decoration: none;
-	}
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
 
-	li a:hover {
-	  background-color: #111;
-	}
+    li a:hover {
+        background-color: #111;
+    }
 
-	.p1 {
-		font-size: 25px;
-		color: black;
-	}
+    main {
+        text-align: center;
+        padding: 50px;
+    }
 
-	.p2 {
-		font-size: 25px;
-		color: red;
-	}
-
-	.p3 {
-		font-size: 25px;
-		color: green;
-	}
-
-	.p4 {
-		font-size: 25px;
-		color: orange;
-	}
-
-	.p5 {
-		font-size: 25px;
-		color: BlueViolet;
-	}
-
-	.p6 {
-		font-size: 25px;
-		color: Goldenrod	;
-	}
-	.p7 {
-		font-size: 25px;
-		color: MediumBlue;
-	}
-
-	.p8 {
-		font-size: 25px;
-		color: YellowGreen	;
-	}
-
-	.p9 {
-		font-size: 25px;
-		color: LimeGreen;
-	}
-
-	.p10 {
-		font-size: 25px;
-		color: IndianRed;
-	}
-	
 </style>
 </head>
 <body>
 	<header>
 		<nav>
 			<ul>
-			  <li><a class="active" href="64-2.html">List</a></li>
-			  <li style="float:right"><a href="64.html">Home</a></li>
+			  <li><a class="active" href="64-3.html">Сабина</a></li>
+			  <li><a href="64-4.html">Зарина</a></li>
+			  <li><a href="#contact">Гулбану</a></li>
+			  <li><a class="active" href="64-5.html">Дилноз</a></li>
+			  <li><a href="64-6.html">Гулчехра</a></li>
+			  <li><a href="#contact">Мафтуна</a></li>
+			  <li style="float:right"><a href="64-7.html">Home</a></li>
 			</ul>
 		</nav>
 	</header>
 	<main>
 		<section>
-			<marquee direction="left" scrollamount="25" >
-		        <p class="p1">8 Mart</p>
-		    </marquee>
-		    <marquee direction="right" scrollamount="25" >
-		        <p class="p2">8 Mart</p>
-		    </marquee>
-		    <marquee direction="left" scrollamount="25" >
-		        <p class="p3">8 Mart</p>
-		    </marquee>
-		    <marquee direction="right" scrollamount="25" >
-		        <p class="p4">8 Mart</p>
-		    </marquee>
-		    <marquee direction="left" scrollamount="25" >
-		        <p class="p5">8 Mart</p>
-		    </marquee>
-		    <marquee direction="right" scrollamount="25" >
-		        <p class="p6">8 Mart</p>
-		    </marquee>
-		    <marquee direction="left" scrollamount="25" >
-		        <p class="p7">8 Mart</p>
-		    </marquee>
-		    <marquee direction="right" scrollamount="25" >
-		        <p class="p8">8 Mart</p>
-		    </marquee>
-		    <marquee direction="left" scrollamount="25" >
-		        <p class="p9">8 Mart</p>
-		    </marquee>
-		    <marquee direction="right" scrollamount="25" >
-		        <p class="p10">8 Mart</p>
-		    </marquee>
+			<div>
+				
+			</div>
 		</section>
 	</main>
 	<footer>
