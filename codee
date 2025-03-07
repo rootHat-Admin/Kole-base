@@ -1,65 +1,132 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>site</title>
+<style>
+	body {
+		margin: 0px;
+	}
 
-	<style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: Arial, sans-serif; }
-        header { background: #333; color: white; padding: 15px; display: flex; justify-content: space-between; align-items: center; }
-        nav a { color: white; text-decoration: none; margin: 0 10px; }
-        main { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 20px; }
-        .block { border: 1px solid #ddd; padding: 15px; text-align: center; }
-        .block img { max-width: 100%; height: auto; }
-        .block button { margin-top: 10px; padding: 10px; background: #28a745; color: white; border: none; cursor: pointer; }
-        footer { background: #333; color: white; text-align: center; padding: 10px; margin-top: 20px; }
-    </style>
+	ul {
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  background-color: #333;
+	}
+
+	li {
+	  float: left;
+	  border-right:1px solid #bbb;
+	}
+
+	li a {
+	  display: block;
+	  color: white;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	}
+
+	li a:hover {
+	  background-color: #111;
+	}
+
+	.p1 {
+		font-size: 25px;
+		color: black;
+	}
+
+	.p2 {
+		font-size: 25px;
+		color: red;
+	}
+
+	.p3 {
+		font-size: 25px;
+		color: green;
+	}
+
+	.p4 {
+		font-size: 25px;
+		color: orange;
+	}
+
+	.p5 {
+		font-size: 25px;
+		color: BlueViolet;
+	}
+
+	.p6 {
+		font-size: 25px;
+		color: Goldenrod	;
+	}
+	.p7 {
+		font-size: 25px;
+		color: MediumBlue;
+	}
+
+	.p8 {
+		font-size: 25px;
+		color: YellowGreen	;
+	}
+
+	.p9 {
+		font-size: 25px;
+		color: LimeGreen;
+	}
+
+	.p10 {
+		font-size: 25px;
+		color: IndianRed;
+	}
+	
+</style>
 </head>
 <body>
-    <header>
-        <div class="logo">Логотип</div>
-        <nav>
-            <a href="#">Главная</a>
-            <a href="#">О нас</a>
-            <a href="#">Контакты</a>
-        </nav>
-    </header>
-    <main>
-        <div class="block">
-            <img src="https://via.placeholder.com/150" alt="Товар">
-            <p>Цена: 1000 руб.</p>
-            <button>Купить</button>
-        </div>
-        <div class="block">
-            <img src="https://via.placeholder.com/150" alt="Товар">
-            <p>Цена: 1200 руб.</p>
-            <button>Купить</button>
-        </div>
-        <div class="block">
-            <img src="https://via.placeholder.com/150" alt="Товар">
-            <p>Цена: 900 руб.</p>
-            <button>Купить</button>
-        </div>
-        <div class="block">
-            <img src="https://via.placeholder.com/150" alt="Товар">
-            <p>Цена: 1100 руб.</p>
-            <button>Купить</button>
-        </div>
-        <div class="block">
-            <img src="https://via.placeholder.com/150" alt="Товар">
-            <p>Цена: 1300 руб.</p>
-            <button>Купить</button>
-        </div>
-        <div class="block">
-            <img src="https://via.placeholder.com/150" alt="Товар">
-            <p>Цена: 1400 руб.</p>
-            <button>Купить</button>
-        </div>
-    </main>
-    <footer>
-        &copy; 2025 Все права защищены
-    </footer>
+	<header>
+		<nav>
+			<ul>
+			  <li><a class="active" href="64-2.html">List</a></li>
+			  <li style="float:right"><a href="64.html">Home</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<marquee direction="left" scrollamount="25" >
+		        <p class="p1">8 Mart</p>
+		    </marquee>
+		    <marquee direction="right" scrollamount="25" >
+		        <p class="p2">8 Mart</p>
+		    </marquee>
+		    <marquee direction="left" scrollamount="25" >
+		        <p class="p3">8 Mart</p>
+		    </marquee>
+		    <marquee direction="right" scrollamount="25" >
+		        <p class="p4">8 Mart</p>
+		    </marquee>
+		    <marquee direction="left" scrollamount="25" >
+		        <p class="p5">8 Mart</p>
+		    </marquee>
+		    <marquee direction="right" scrollamount="25" >
+		        <p class="p6">8 Mart</p>
+		    </marquee>
+		    <marquee direction="left" scrollamount="25" >
+		        <p class="p7">8 Mart</p>
+		    </marquee>
+		    <marquee direction="right" scrollamount="25" >
+		        <p class="p8">8 Mart</p>
+		    </marquee>
+		    <marquee direction="left" scrollamount="25" >
+		        <p class="p9">8 Mart</p>
+		    </marquee>
+		    <marquee direction="right" scrollamount="25" >
+		        <p class="p10">8 Mart</p>
+		    </marquee>
+		</section>
+	</main>
+	<footer>
+		
+	</footer>
 </body>
 </html>
