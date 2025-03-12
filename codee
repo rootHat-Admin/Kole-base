@@ -1,71 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="kk">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>4</title>
+	<title>Тіркеу формасы</title>
+	<style>
+		body {
+			margin: 100px;
+			font-family: Arial, sans-serif;
+		}
+		form {
+			max-width: 300px;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+		}
+		input, button {
+			width: 95%;
+			padding: 10px;
+			margin-top: 5px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+		button {
+			background-color: #28a745;
+			color: white;
+			cursor: pointer;
+			border: none;
+		}
+		button:hover {
+			background-color: #218838;
+		}
+	</style>
 </head>
 <body>
-	<header>
-		<nav>
-			<ul>
-				<li><a href="#">1</a></li>
-				<li><a href="#">2</a></li>
-				<li><a href="#">3</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main>
-		<section>
-			<div class="w3-container">
-			  <h2>Tabs</h2>
-			  <p>Tabs are perfect for single page web applications, or for web pages capable of displaying different subjects. Click on the links below.</p>
-			</div>
+	<div>
+		<h2>Тіркеу формасы</h2>
+		<form action="process.php" method="POST">
+			<label for="name">Аты:</label><br>
+			<input type="text" id="name" name="name" placeholder="Аты" required><br><br>
 
-			<div class="w3-bar w3-black">
-			  <button class="w3-bar-item w3-button" onclick="openCity('London')">London</button>
-			  <button class="w3-bar-item w3-button" onclick="openCity('Paris')">Paris</button>
-			  <button class="w3-bar-item w3-button" onclick="openCity('Tokyo')">Tokyo</button>
-			</div>
+			<label for="email">Пошта:</label><br>
+			<input type="email" id="email" name="email" placeholder="Пошта" required><br><br>
 
-			<div id="London" class="w3-container city">
-			  <h2>London</h2>
-			  <p>London is the capital city of England.</p>
-			</div>
-
-			<div id="Paris" class="w3-container city" style="display:none">
-			  <h2>Paris</h2>
-			  <p>Paris is the capital of France.</p> 
-			</div>
-
-			<div id="Tokyo" class="w3-container city" style="display:none">
-			  <h2>Tokyo</h2>
-			  <p>Tokyo is the capital of Japan.</p>
-			</div>
-		</section>
-
-		<section>
-			
-		</section>
-
-		<section>
-			
-		</section>
-	</main>
-	<footer>
-		<p>&copy; 2025 Колледж. Барлық құқықтар қорғалған.</p>
-	</footer>
-
-	<script>
-		function openCity(cityName) {
-		  var i;
-		  var x = document.getElementsByClassName("city");
-		  for (i = 0; i < x.length; i++) {
-		    x[i].style.display = "none";  
-		  }
-		  document.getElementById(cityName).style.display = "block";  
-		}
-</script>
-
+			<button type="submit">Жіберу</button>
+		</form> 
+	</div>
 </body>
 </html>
