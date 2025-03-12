@@ -6,17 +6,9 @@ body {
   counter-reset: section;
 }
 
-h1 {
-  counter-reset: section;
-}
-
-h2 {
-  counter-increment: section;
-  counter-reset: subsection;
-}
-
 h2::before {
-  content: counter(section) " - тарау ";
+  counter-increment: section;
+  content: "Тарау " counter(section) ": ";
 }
 
 h3 {
@@ -30,23 +22,25 @@ h3::before {
 </head>
 <body>
 
-<h1>Қазақ тілі</h1>
+<h1>Бағдарламалау кітабы</h1>
 
-<h2>Кіріспе</h2>
-<h3>Абзац</h3>
-<h3>Абзац</h3>
+<h2>HTML оқу құралы</h2>
 
-<h2>Негізгі түсінік</h2>
-<h3>Абзац</h3>
-<h3>Абзац</h3>
+<h3><a href="https://www.w3schools.com/html/html_intro.asp">HTML Кіріспе</a></h3>
+<h3><a href="https://www.w3schools.com/html/default.asp">HTML тілін</a></h3>
 
-<h2>Тағы бір тарау</h2>
-<h3>Абзац</h3>
-<h3>Абзац</h3>
+<h2>CSS оқулығы</h2>
 
-<h2>Қорытынды</h2>
-<h3>Абзац</h3>
-<h3>Абзац</h3>
+<h3><a href="https://www.w3schools.com/css/css_intro.asp">CSS Кіріспе</a></h3>
+<h3><a href="https://www.w3schools.com/css/css_syntax.asp">CSS Синтаксис
+</a></h3>
+
+<h2>JavaScript оқулығы</h2>
+
+<h3><a href="https://www.w3schools.com/js/js_intro.asp">javaScript Кіріспе</a></h3>
+<h3><a href="https://www.w3schools.com/js/js_let.asp">javaScript Рұқсат етілсін
+</a></h3>
+
 
 </body>
 </html>
