@@ -7,24 +7,30 @@ body {
 }
 
 h1 {
+  counter-reset: section;
+}
+
+h2 {
+  counter-increment: section;
   counter-reset: subsection;
 }
 
 h2::before {
-  counter-increment: section;
   content: counter(section) " - тарау ";
 }
 
-h3::before {
+h3 {
   counter-increment: subsection;
-  content: counter(section) "." counter(section) "." counter(subsection) " ";
+}
+
+h3::before {
+  content: counter(section) "." counter(subsection) " ";
 }
 </style>
 </head>
 <body>
 
-
-<h1>Кітап атауы</h1>
+<h1>Қазақ тілі</h1>
 
 <h2>Кіріспе</h2>
 <h3>Абзац</h3>
@@ -34,11 +40,11 @@ h3::before {
 <h3>Абзац</h3>
 <h3>Абзац</h3>
 
-<h2>Негізгі түсінік</h2>
+<h2>Тағы бір тарау</h2>
 <h3>Абзац</h3>
 <h3>Абзац</h3>
 
-<h2>А</h2>
+<h2>Қорытынды</h2>
 <h3>Абзац</h3>
 <h3>Абзац</h3>
 
