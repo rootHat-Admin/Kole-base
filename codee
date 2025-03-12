@@ -1,68 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-	body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: linear-gradient(to right, #ff9a9e, #fad0c4);
-    }
-
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: rgba(51, 51, 51, 0.8);
-    }
-
-    li {
-        float: left;
-        border-right: 1px solid #bbb;
-    }
-
-    li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
-
-    li a:hover {
-        background-color: #111;
-    }
-
-    main {
-        text-align: center;
-        padding: 50px;
-    }
-
-</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>4</title>
 </head>
 <body>
 	<header>
 		<nav>
 			<ul>
-			  <li><a class="active" href="64-3.html">Сабина</a></li>
-			  <li><a href="64-4.html">Зарина</a></li>
-			  <li><a href="#contact">Гулбану</a></li>
-			  <li><a class="active" href="64-5.html">Дилноз</a></li>
-			  <li><a href="64-6.html">Гулчехра</a></li>
-			  <li><a href="#contact">Мафтуна</a></li>
-			  <li style="float:right"><a href="64-7.html">Home</a></li>
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
 			</ul>
 		</nav>
 	</header>
 	<main>
 		<section>
-			<div>
-				
+			<div class="w3-container">
+			  <h2>Tabs</h2>
+			  <p>Tabs are perfect for single page web applications, or for web pages capable of displaying different subjects. Click on the links below.</p>
 			</div>
+
+			<div class="w3-bar w3-black">
+			  <button class="w3-bar-item w3-button" onclick="openCity('London')">London</button>
+			  <button class="w3-bar-item w3-button" onclick="openCity('Paris')">Paris</button>
+			  <button class="w3-bar-item w3-button" onclick="openCity('Tokyo')">Tokyo</button>
+			</div>
+
+			<div id="London" class="w3-container city">
+			  <h2>London</h2>
+			  <p>London is the capital city of England.</p>
+			</div>
+
+			<div id="Paris" class="w3-container city" style="display:none">
+			  <h2>Paris</h2>
+			  <p>Paris is the capital of France.</p> 
+			</div>
+
+			<div id="Tokyo" class="w3-container city" style="display:none">
+			  <h2>Tokyo</h2>
+			  <p>Tokyo is the capital of Japan.</p>
+			</div>
+		</section>
+
+		<section>
+			
+		</section>
+
+		<section>
+			
 		</section>
 	</main>
 	<footer>
-		
+		<p>&copy; 2025 Колледж. Барлық құқықтар қорғалған.</p>
 	</footer>
+
+	<script>
+		function openCity(cityName) {
+		  var i;
+		  var x = document.getElementsByClassName("city");
+		  for (i = 0; i < x.length; i++) {
+		    x[i].style.display = "none";  
+		  }
+		  document.getElementById(cityName).style.display = "block";  
+		}
+</script>
+
 </body>
 </html>
