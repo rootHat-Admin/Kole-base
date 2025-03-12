@@ -1,51 +1,46 @@
 <!DOCTYPE html>
-<html lang="kk">
+<html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Тіркеу формасы</title>
-	<style>
-		body {
-			margin: 100px;
-			font-family: Arial, sans-serif;
-		}
-		form {
-			max-width: 300px;
-			padding: 20px;
-			border: 1px solid #ccc;
-			border-radius: 10px;
-			box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-		}
-		input, button {
-			width: 95%;
-			padding: 10px;
-			margin-top: 5px;
-			border: 1px solid #ccc;
-			border-radius: 5px;
-		}
-		button {
-			background-color: #28a745;
-			color: white;
-			cursor: pointer;
-			border: none;
-		}
-		button:hover {
-			background-color: #218838;
-		}
-	</style>
+<style>
+body {
+  counter-reset: section;
+}
+
+h1 {
+  counter-reset: subsection;
+}
+
+h2::before {
+  counter-increment: section;
+  content: counter(section) " - тарау ";
+}
+
+h3::before {
+  counter-increment: subsection;
+  content: counter(section) "." counter(section) "." counter(subsection) " ";
+}
+</style>
 </head>
 <body>
-	<div>
-		<h2>Тіркеу формасы</h2>
-		<form action="process.php" method="POST">
-			<label for="name">Аты:</label><br>
-			<input type="text" id="name" name="name" placeholder="Аты" required><br><br>
 
-			<label for="email">Пошта:</label><br>
-			<input type="email" id="email" name="email" placeholder="Пошта" required><br><br>
 
-			<button type="submit">Жіберу</button>
-		</form> 
-	</div>
+<h1>Кітап атауы</h1>
+
+<h2>Кіріспе</h2>
+<h3>Абзац</h3>
+<h3>Абзац</h3>
+
+<h2>Негізгі түсінік</h2>
+<h3>Абзац</h3>
+<h3>Абзац</h3>
+
+<h2>Негізгі түсінік</h2>
+<h3>Абзац</h3>
+<h3>Абзац</h3>
+
+<h2>А</h2>
+<h3>Абзац</h3>
+<h3>Абзац</h3>
+
 </body>
 </html>
