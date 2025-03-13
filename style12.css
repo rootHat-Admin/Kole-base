@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: aliceblue;
+    background-color: rgb(35, 35, 35);
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    margin: 10px;
+    padding: 20px;
+    flex: 1; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.blok-img {
+    width: 200px; /* Увеличил размер блока */
+    text-align: center; /* Центрируем содержимое */
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: inline-block; /* Размещаем блоки в строку */
+}
+
+.blok-img img {
+    width: 100%; /* Чтобы изображение занимало всю ширину блока */
+    height: auto; /* Сохраняем пропорции */
+    border-radius: 5px; /* Немного скругляем углы */
+}
+
+.blok-img button {
+    background: rgb(35, 35, 35);
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.blok-img button:hover {
+    background: #222;
+}
+
+
+.logo {
+    width: 40px;
+}
+
+.katalag img {
+    width: 400px;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+input {
+    width: 90%;
+    padding: 7px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: rgb(35, 35, 35);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+button:hover {
+    background: #222;
+}
+
+
+footer {
+    color: aliceblue;
+    background-color: rgb(35, 35, 35);
+    padding: 20px;
+    text-align: center; 
+    width: 100%;
+    position: absolute; 
+    bottom: 0;
+    left: 0;
+}
+
+footer button {
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    padding: 12px 35px; 
+    background: transparent;
+    color: aliceblue;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+    margin: 0 20px;
+}
+
+footer button:hover {
+    border-color: #979797;
+    color: #979797;
+    background: rgba(255, 255, 255, 0.1); 
+}
+
