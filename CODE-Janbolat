@@ -1,83 +1,80 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Фильтры</title>
+    <title>circle</title>
     <style>
-        body {
-            text-align: center;
-            margin-top: 50px;
+        #img1 {
+            clip-path: circle(50%);
         }
 
-        .container {
-            position: relative;
-            display: inline-block;
+        #img2 {
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
         }
 
-        .container {
-            position: relative;
-            display: inline-block;
+        #img3 {
+            clip-path: inset(0);
         }
 
-        img {
-            width: 500px;
-            height: auto;
-            transition: filter 0.5s ease;
+        #img4 {
+            clip-path: inset(10% 0);
         }
 
-        button {
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
+        #img5 {
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        }
+        
+        #img6 {
+            clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
         }
 
-        @keyframes filterChange {
-            0% { filter: blur(2px); }
-            10% { filter: brightness(150%); }
-            20% { filter: drop-shadow(8px 8px 10px gray); }
-            30% { filter: grayscale(1); }
-            40% { filter: hue-rotate(200deg); }
-            50% { filter: invert(70%); }
-            60% { filter: opacity(50%); }
-            70% { filter: saturate(100%); }
-            80% { filter: sepia(1); }
-            90% { filter: contrast(150%); }
-            100% { filter: blur(2px); }
+        #img7 {
+            clip-path: polygon(25% 0%, 75% 0%, 100% 100%, 0% 100%);
         }
 
-        button {
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
+        #img8 {
+            clip-path: polygon(50% 0%, 75% 25%, 100% 50%, 75% 75%, 50% 100%, 25% 75%, 0% 50%, 25% 25%);
+        }
+
+        #img9 {
+            clip-path: polygon(15% 0%, 85% 0%, 100% 50%, 85% 100%, 15% 100%, 0% 50%);
+        }
+
+        #img10 {
+            clip-path: polygon(50% 15%, 61% 9%, 75% 12%, 85% 25%, 85% 37%, 75% 50%, 50% 75%, 25% 50%, 15% 37%, 15% 25%, 25% 12%, 39% 9%);
         }
     </style>
 </head>
 <body>
-    <h1>filter</h1>
-    <div class="container">
-        <img id="image" src="img-1.jpeg">
-    </div>
-    <br>
+    <h1>Шеңбер</h1>
+    <img id="img1" src="img-1.jpeg"> <br><br>
 
-    <button id="filterButton">Сүзгіні өзгерту</button>
-    
-    <script>
-        const image = document.getElementById('image');
-        const button = document.getElementById('filterButton');
-        const filters = [
-            "blur(2px)", "brightness(150%)", "drop-shadow(8px 8px 10px gray)",
-            "grayscale(1)", "hue-rotate(200deg)", "invert(70%)",
-            "opacity(50%)", "saturate(100%)", "sepia(1)", "contrast(150%)"
-        ];
-        let index = 0;
+    <h1>Үшбұрыш</h1>
+    <img id="img2" src="img-1.jpeg"> <br><br>
 
-        button.addEventListener('click', () => {
-            image.style.filter = filters[index];
-            index = (index + 1) % filters.length;
-        });
-    </script>
+    <h1>Шаршы</h1>
+    <img id="img3" src="img-1.jpeg"> <br><br>
+
+    <h1>Тіктөртбұрыш</h1>
+    <img id="img4" src="img-1.jpeg"> <br><br>
+
+    <h1>Жұлдыз</h1>
+    <img id="img5" src="img-1.jpeg"> <br><br>
+
+    <h1>Параллелограмм</h1>
+    <img id="img6" src="img-1.jpeg"> <br><br>
+
+    <h1>Трапеция</h1>
+    <img id="img7" src="img-1.jpeg"> <br><br>
+
+    <h1>Жұлдыз </h1>
+    <img id="img8" src="img-1.jpeg"> <br><br>
+
+    <h1>Параллелограмм </h1>
+    <img id="img9" src="img-1.jpeg"> <br><br>
+
+    <h1>Жүрек</h1>
+    <img id="img10" src="img-1.jpeg"> <br><br>
 </body>
 </html>
