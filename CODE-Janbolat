@@ -42,14 +42,16 @@
             background-size: cover;
             background-position: center;
             border: 2px solid #fff;
+            backface-visibility: hidden;
         }
 
-        .front  { transform: rotateY(  0deg) translateZ(100px); background-image: url('111.png'); }
-        .back   { transform: rotateY(180deg) translateZ(100px); background-image: url('222.png'); }
-        .right  { transform: rotateY( 90deg) translateZ(100px); background-image: url('333.png'); }
-        .left   { transform: rotateY(-90deg) translateZ(100px); background-image: url('444.png'); }
-        .top    { transform: rotateX( 90deg) translateZ(100px); background-image: url('555.png'); }
-        .bottom { transform: rotateX(-90deg) translateZ(100px); background-image: url('666.png'); }
+        .front  { transform: rotateY(  0deg) translateZ(99px); background-image: url('111.png'); }
+        .back   { transform: rotateY(180deg) translateZ(99px); background-image: url('222.png'); }
+        .right  { transform: rotateY( 90deg) translateZ(99px); background-image: url('333.png'); }
+        .left   { transform: rotateY(-90deg) translateZ(99px); background-image: url('444.png'); }
+        .top    { transform: rotateX( 90deg) translateZ(99px); background-image: url('555.png'); }
+        .bottom { transform: rotateX(-90deg) translateZ(99px); background-image: url('666.png'); }
+
     </style>
 </head>
 <body>
