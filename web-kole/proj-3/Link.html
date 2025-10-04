@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <title>&lt;a&gt; тегінің толық мысалы</title>
+</head>
+<body>
+    <h1>&lt;a&gt; тегінің барлық мысалдары</h1>
+
+    <!-- 1. Сыртқы сілтеме -->
+    <h2>Сыртқы сілтеме</h2>
+    <a href="https://www.wikipedia.org" target="_blank" rel="noopener noreferrer" title="Wikipedia сайтына өту">
+        Wikipedia сайтына өту
+    </a>
+
+    <hr>
+
+    <!-- 2. Ішкі сілтеме (сол беттегі бөлімге өту) -->
+    <h2>Ішкі сілтеме</h2>
+    <a href="#contact">Байланыс бөліміне өту</a>
+
+    <hr>
+
+    <!-- 3. Электрондық поштаға сілтеме -->
+    <h2>Электрондық поштаға сілтеме</h2>
+    <a href="mailto:info@example.com" title="Электрондық пошта жіберу">
+        info@example.com
+    </a>
+
+    <hr>
+
+    <!-- 4. Телефонға сілтеме -->
+    <h2>Телефонға сілтеме</h2>
+    <a href="tel:+77001234567" title="Телефон нөміріне қоңырау шалу">
+        +7 700 123 45 67
+    </a>
+
+    <hr>
+
+    <!-- 5. Файл жүктеу -->
+    <h2>Файл жүктеу</h2>
+    <a href="document.pdf" download title="PDF файлын жүктеу">
+        PDF жүктеу
+    </a>
+
+    <hr>
+
+    <!-- 6. Суретпен бірге сілтеме -->
+    <h2>Суретпен сілтеме</h2>
+    <a href="https://example.com" target="_blank" rel="noopener" title="Сайтқа өту">
+        <img src="icon.png" alt="Сайт белгішесі" width="24" height="24">
+        Сайтқа өту
+    </a>
+
+    <hr>
+
+    <!-- 7. Сілтеменің тілі және типі -->
+    <h2>hreflang және type атрибуттары</h2>
+    <a href="document.pdf" hreflang="kk" type="application/pdf" download>
+        Қазақша PDF жүктеу
+    </a>
+
+    <hr>
+
+    <!-- 8. Target мысалдары -->
+    <h2>Target мысалдары</h2>
+    <ul>
+        <li><a href="https://example.com" target="_self">_self (сол терезе)</a></li>
+        <li><a href="https://example.com" target="_blank">_blank (жаңа қойынды)</a></li>
+        <li><a href="https://example.com" target="_parent">_parent (ата терезе)</a></li>
+        <li><a href="https://example.com" target="_top">_top (барлық терезе)</a></li>
+    </ul>
+
+    <hr>
+
+    <!-- 9. Ішкі элементтері бар сілтеме -->
+    <h2>Ішкі HTML элементтерімен сілтеме</h2>
+    <a href="https://example.com" target="_blank" rel="noopener">
+        <span style="color: blue; font-weight: bold;">Мәтін және стиль</span>
+        <img src="icon.png" alt="Иконка" width="16" height="16">
+    </a>
+
+    <hr>
+
+    <!-- 10. rel="nofollow" SEO мысалы -->
+    <h2>SEO кеңестер</h2>
+    <p>
+        Сыртқы сілтемелерге <code>rel="nofollow"</code> қосуға болады:
+        <a href="https://spam-site.com" rel="nofollow">Бұл сайтқа сілтеме</a>
+    </p>
+
+    <hr>
+
+    <!-- 11. Контакт бөлімі (ішкі сілтемеге арналған) -->
+    <h2 id="contact">Байланыс бөлімі</h2>
+    <p>Бұл бөлімге ішкі сілтеме арқылы өту мүмкін.</p>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Форма регистрции</title>
+        <link rel="stylesheet" href="c2.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Регистрация</h1>
+            <form class="form">
+                <label for="username">Имя</label>
+                <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Введите имя"
+                />
+
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Введите email"
+                />
+
+                <label for="gender">Пол</label>
+                <select id="gender" name="gender">
+                    <option value="male">Мужской</option>
+                    <option value="female">Женский</option>
+                </select>
+
+                <label for="message">О себе</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    placeholder="Кратко о себе"
+                ></textarea>
+
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+        </div>
+    </body>
+</html>

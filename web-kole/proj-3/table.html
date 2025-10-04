@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Table мысалы (CSS жоқ)</title>
+</head>
+
+<body>
+    <h1>HTML Table тегінің мысалы (CSS жоқ)</h1>
+
+    <!-- 1. Негізгі кесте -->
+    <table border="1">
+        <caption>Оқу кестесі</caption>
+        <thead>
+            <tr>
+                <th>№</th>
+                <th>Пән</th>
+                <th>Мұғалім</th>
+                <th>Сағат саны</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Математика</td>
+                <td>Әлібек</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Физика</td>
+                <td>Гүлнар</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Химия</td>
+                <td>Санжар</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td colspan="2">Биология (біріктірілген ұяшық)</td>
+                <td>4</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Барлығы</td>
+                <td>16</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr>
+
+    <!-- 2. Кіші кесте -->
+    <h2>Кіші кесте</h2>
+    <table border="1" >
+        <tr>
+            <th>Аты</th>
+            <th>Жасы</th>
+        </tr>
+        <tr>
+            <td>Айжан</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Нұрлан</td>
+            <td>22</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- 3. rowspan және colspan мысалы -->
+    <h2>rowspan және colspan мысалы</h2>
+    <table border="1" cellspacing="0" cellpadding="5">
+        <tr>
+            <th rowspan="2">Пән</th>
+            <th colspan="2">Баға</th>
+        </tr>
+        <tr>
+            <th>1 тоқсан</th>
+            <th>2 тоқсан</th>
+        </tr>
+        <tr>
+            <td>Математика</td>
+            <td>5</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>Физика</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+    </table>
+
+</body>
+</html>

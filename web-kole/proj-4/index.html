@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Форма регистрации">
+  <meta name="keywords" content="Form register html css js">
+  
+  <link rel="stylesheet" href="style.css">
+  <title>Форма регистрации</title>
+</head>
+<body>
+<div class="form-register">
+    <h1>Регистрация</h1>
+    <form action="main.php" method="post" name="register-form" class="register-form">
+      
+      <div>
+        <label for="name">ФИО:</label>
+        <input type="text" name="name" id="name" placeholder="Введите ФИО">
+      </div>
+
+      <div>
+        <label for="email">Почта:</label>
+        <input type="email" name="email" id="email" placeholder="Введите email">
+      </div>
+
+      <div class="form-group">
+          <label>Ваш тип разработки:</label>
+          <div>
+            <input type="radio" name="type-skill-dev" value="К сожалению нет"> К сожалению нет <br>
+            <input type="radio" name="type-skill-dev" value="Frontend"> Frontend <br>
+            <input type="radio" name="type-skill-dev" value="Backend"> Backend <br>
+            <input type="radio" name="type-skill-dev" value="Fullstack"> Fullstack 
+          </div>
+      </div>
+
+      <div class="form-group">
+        <label>Навыки:</label>
+        <div>
+          <input type="checkbox" name="skill" value="HTML/CSS"> HTML/CSS <br>
+          <input type="checkbox" name="skill" value="JavaScript"> JavaScript <br>
+          <input type="checkbox" name="skill" value="PHP"> PHP <br>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="about">О себе:</label>
+        <textarea name="about" id="about" placeholder="Напишите что-нибудь о себе"></textarea>
+      </div>
+
+      <div>
+        <input type="submit" value="Зарегистрироваться">
+      </div>
+    </form>
+</div>
+</body>
+</html>

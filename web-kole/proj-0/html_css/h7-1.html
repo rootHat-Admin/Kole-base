@@ -1,0 +1,138 @@
+ <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Html Froms Cheat Sheet</title>
+    </head>
+    <body>
+        <h1>Примеры всех типов полей HTML-форм</h1> <br
+        <h1>Examples of all types of HTML form fields</h1>
+
+        <form action="/submit" method="post" >
+
+            <!-- Текстовое поле -->
+            <!-- Text field -->
+            <labal for="username">Name:</labal>
+            <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Enter your name"
+            > <br><br>
+
+            <!-- Пароль -->
+            <!-- Password -->
+            <label for="password">Password:</label>
+            <input
+                type="password"
+                id="password"
+                ame="password"
+                placelholder="Enter your password"
+            > <br><br>
+
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input
+                type="email"
+                id="email"
+                name="email" placeholder="Enter your email"
+            > <br><br>
+
+            <!-- Nuber -->
+            <label for="age">Age:</label>
+            <input
+                type="number"
+                id="age"
+                name="age"
+                placeholder="Enter your age"
+            > <br><br>
+
+            <!--- Telephone -->
+            <label for="phone">Phone:</label>
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="+7 (___) ___-__-__"
+            > <br><br>
+
+            <!-- URL -->
+            <label for="site">Website:</label>
+            <input
+                type="url"
+                id="site"
+                name="site"
+                placeholder="Enter your website"
+            > <br><br>
+
+            <!-- Date and time -->
+            <label for="birthday">Birthday:</label>
+            <input
+                type="date"
+                id="birthday"
+                name="birthday"
+                placeholder="Enter your birthday"
+            > <br><br>
+
+            <label for="meeting">Meeting Time:</label>
+            <input
+                type="time"
+                id="meeting"
+                name="meeting"
+                placeholder="Enter your meeting time"
+            > <br><br>
+
+            <label for="event"> Event Date & Time:</label>
+            <input
+                type="datetime-local"
+                id="event"
+                name="event"
+                placeholder="Enter your event date and time"
+            > <br><br>
+
+            <!-- Textarea -->
+            <label for="textarea">Message:</label><br>
+            <textarea
+                id="textarea"
+                name="textarea"
+                rows="4"
+                cols="50"
+                placeholder="Enter your message"
+            ></textarea> <br><br>
+
+            <!-- Radio button -->
+            <p>Gender:</p>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label> <br><br>
+
+            <!-- Checkbox -->
+            <p>Hobbies</p>
+            <input type="checkbox" id="reading" name="hobby" value="reading">
+            <label for="reading">Reading</label>
+            <input type="checkbox" id="sports" name="hobby" value="sports">
+            <label for="sports">Sports</label>
+            <input type="checkbox" id="music" name="hobby" value="music">
+            <label for="music">Music</label> <br><br>
+
+            <!-- Dropdown list  -->
+            <label> for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="us">USA</option>
+                <option value="uk">UK</option>
+                <option value="fr">France</option>
+                <option value="de">Germany</option>
+            </select> <br><br>
+
+                <!-- File upload -->
+            <label for="avatar">Upload Avatar:</label>
+            <input type="file" id="avatar" name="avatar"> <br><br>
+
+                <!-- Button -->
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+            <button type="button" onclick="alert('Button clecked')">Just a Button</button>
+        </form>
+    </body>
+</html>

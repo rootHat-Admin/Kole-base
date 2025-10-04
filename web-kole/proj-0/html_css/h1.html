@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Пример 1.0</title>
+</head>
+<body>
+
+    <header>
+        <h1>Мой сайт</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">Об мне</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Добро пожаловать</h2>
+            <p>Кроче практикусь а что такое?</p>
+        </section>
+
+        <section id="about">
+            <h2>Обо мне, а что!</h2>
+            <img src="https://yandex.kz/images/search?text=Картинка+коттеджа&img_url=https%3A%2F%2Fpbs.twimg.com%2Fmedia%2FBROMCvtCcAA0Uso.jpg&pos=0&rpt=simage&stype=image&lr=21106&parent-reqid=1755866043961636-6301549347330022749-balancer-term-kz-ext-5-BAL&source=serp" alt="Домик">
+            <p>Картинка выше - это пример <code>&lt;img&gt;</code></p>
+        </section>
+
+        <section id="content">
+            <h2>Форма</h2>
+            <form action="">
+                <label for="name"> Имя: <input type="text" name="name"></label><br>
+                <label for="email"> Почта: <input type="email" name="email"></label><br>
+                <label>Выберите:
+                    <select name="option">
+                        <option value="1">Вариант 1</option>
+                        <option value="2">Вариант 2</option>
+                    </select>
+                </label><br>
+                <textarea name="message" placeholder="сообщение"></textarea><br>
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <h1>Мой сайт</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">Об мне</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>

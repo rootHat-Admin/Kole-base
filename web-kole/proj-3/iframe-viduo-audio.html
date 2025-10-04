@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Пример iframe, audio и video</title>
+</head>
+<body>
+    <h1>Пример использования iframe, audio и video</h1>
+
+    <!-- 1. Iframe (встраивание YouTube видео) -->
+    <h2>Iframe</h2>
+    <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+
+    <!-- 2. Audio (воспроизведение музыки) -->
+    <h2>Audio</h2>
+    <audio controls>
+        <source src="audio-example.mp3" type="audio/mpeg">
+        Ваш браузер не поддерживает аудио.
+    </audio>
+
+    <!-- 3. Video (воспроизведение видео) -->
+    <h2>Video</h2>
+    <video width="640" height="360" controls>
+        <source src="video-example.mp4" type="video/mp4">
+        Ваш браузер не поддерживает видео.
+    </video>
+</body>
+</html>
