@@ -1,6 +1,24 @@
 ul li {
+    list-style: none; 
+    padding-left: 25px;
+    background-repeat: no-repeat;
+    background-image: url('car.png'); 
+    background-size: 20px 20px; 
+}
+
+/* ul li {
     list-style-image: url('car.png'); 
+} */
+
+/*ol li {
+    list-style: none; 
+    padding-left: 25px;
+    background-repeat: no-repeat;
+    background-image: url('vegetable.png'); 
+    background-size: 20px 20px; 
+} */
 
 ol li {
-    list-style-image: url('fruit.png'); 
+    list-style: none;
+    list-style-image: url('cauliflower.png');
 }

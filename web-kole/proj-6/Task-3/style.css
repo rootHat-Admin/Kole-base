@@ -1,0 +1,26 @@
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #397d3a;
+    transform: scale(0.95);
+}
+
+button:focus {
+    outline: 2px solid #2e7031;
+    outline-offset: 2px;
+}
