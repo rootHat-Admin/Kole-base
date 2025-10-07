@@ -1,0 +1,101 @@
+/* CSS негізі екі бөліктен тұрады
+Селектор — қай элементке стиль қолдану керегін анықтайды.
+Мысалы: p → барлық <p> тегтеріне; .menu → класс menu бар барлық элементтерге; #header → id header бар бір элементке.
+Декларация — сол элементке қандай стиль қолданылатынын көрсетеді.
+Мысалы: { color: red; background: yellow; } */
+
+
+CSS селекторы
+
+*                /* барлық элементтерді таңдайды */
+element          /* нақты тегті таңдайды, мысалы div, p */
+.class           /* класс бойынша таңдайды */
+#id              /* id бойынша таңдайды */
+element.class    /* тег пен класс комбинациясы */
+element#id       /* тег пен id комбинациясы */
+element1, element2 /* бірнеше тегтерді топтастырып таңдау */
+element element  /* элемент ішіндегі барлық ішкі элементтерді таңдау */
+element > element /* тек тікелей баласын таңдау */
+element + element /* жанындағы келесі элементті таңдау */
+element ~ element /* барлық кейінгі элементтерді таңдау */
+[attribute]       /* атрибуты бар элементтерді таңдау */
+[attribute=value] /* атрибуты дәл мәнге тең элементтерді таңдау */
+[attribute~=value] /* атрибутында сөз бар элементтерді таңдау */
+[attribute|=value] /* атрибуты value немесе value- басталатын элементтер */
+[attribute^=value] /* атрибуты value басталатын элементтер */
+[attribute$=value] /* атрибуты value аяқталатын элементтер */
+[attribute*=value] /* атрибутында value бар элементтер */
+:not(selector)    /* selector емес элементтерді таңдау */
+:first-child      /* бірінші бала */
+:last-child       /* соңғы бала */
+:nth-child(n)     /* n-ші бала */
+:nth-child(odd)   /* тақ балалары */
+:nth-child(even)  /* жұп балалары */
+:nth-last-child(n) /* соңынан n-ші бала */
+:first-of-type    /* бірінші типтегі элемент */
+:last-of-type     /* соңғы типтегі элемент */
+:nth-of-type(n)   /* n-ші типтегі элемент */
+:nth-last-of-type(n) /* соңынан n-ші типтегі элемент */
+:root             /* түбір элемент (html) */
+:empty            /* ішінде ешқандай элемент жоқ */
+:focus            /* фокусқа түскен элемент */
+:enabled          /* қосулы элемент */
+:disabled         /* өшірулі элемент */
+:checked          /* таңдалған чекбокс немесе радио */
+:target           /* URL-де көрсетілген id */
+
+
+Псевдокласстар және псевдоэлементтер
+
+:link             /* әлі басылмаған сілтеме */
+:visited          /* бұрын басылған сілтеме */
+:hover            /* тышқан үстінде */
+:active           /* басылған немесе белсенді элемент */
+:focus            /* фокусталған элемент */
+:checked          /* таңдалған чекбокс/радио */
+:disabled         /* қолжетімсіз элемент */
+:enabled          /* қолжетімді элемент */
+:first-child      /* бірінші бала */
+:last-child       /* соңғы бала */
+:nth-child(n)     /* n-ші бала */
+:nth-child(odd)   /* тақ балалары */
+:nth-child(even)  /* жұп балалары */
+:nth-last-child(n) /* соңынан n-ші бала */
+:first-of-type    /* бірінші типтегі элемент */
+:last-of-type     /* соңғы типтегі элемент */
+:nth-of-type(n)   /* n-ші типтегі элемент */
+:nth-last-of-type(n) /* соңынан n-ші типтегі элемент */
+:empty            /* ішінде ешқандай контент жоқ */
+:root             /* түбір элемент */
+:not(selector)    /* selector емес элементтер */
+
+::before          /* элементтің алдында контент қосу */
+::after           /* элементтің соңында контент қосу */
+::first-letter    /* мәтіннің бірінші әрпін таңдау */
+::first-line      /* мәтіннің бірінші жолын таңдау */
+::selection       /* таңдалған мәтінге стиль беру */
+::marker          /* тізім маркеріне стиль беру */
+::backdrop        /* модаль терезе фоны */
+
+a {
+    position: flex;
+    position: relative;
+    position: absolute;
+}
+
+i {
+    float: left;
+    margin: 10px;
+}
+
+
+text-transform          /* преобразование регистра текста: uppercase, lowercase, capitalize, none */
+text-decoration         /* полная запись для линии текста, цвета, стиля и толщины: underline, overline, line-through, none */
+text-decoration-line    /* тип линии: underline, overline, line-through, комбинации */
+text-decoration-color   /* цвет линии текста: red, #ff0000, rgba(0,0,0,0.5) */
+text-decoration-style   /* стиль линии: solid, dotted, dashed, wavy */
+text-decoration-thickness/* толщина линии: 1px, 2px, from-font */
+text-underline-offset   /* смещение линии: 0px, 5px, 0.2em */
+text-shadow             /* тень текста: offsetX offsetY blurRadius color; несколько через запятую */
+letter-spacing          /* интервал между буквами: normal, 2px, -1px */
+text-indent             /* отступ первой строки: 0, 20px, -10px */

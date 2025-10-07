@@ -1,0 +1,6 @@
+ul li {
+    list-style-image: url('car.png'); 
+
+ol li {
+    list-style-image: url('fruit.png'); 
+}

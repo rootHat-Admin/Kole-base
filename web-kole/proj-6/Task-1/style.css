@@ -1,0 +1,28 @@
+ul {
+    list-style-type: circle;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(94, 0, 0);
+    font-size: 16px;
+}
+
+ul:hover {
+    list-style-type: decimal;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(234, 36, 36);
+    font-size: 17px;
+}
+
+ol {
+    list-style-type: georgian;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 126, 61);
+    font-size: 15px;
+}
+
+ol:hover {
+    list-style-type: lower-greek;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(13, 190, 13);
+    font-size: 16px;
+}
+

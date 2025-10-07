@@ -1,33 +1,33 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="kk">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Форма регистрации">
+  <meta name="description" content="Тіркелу формасы">
   <meta name="keywords" content="Form register html css js">
   
   <link rel="stylesheet" href="style.css">
-  <title>Форма регистрации</title>
+  <title>Тіркелу формасы</title>
 </head>
 <body>
 <div class="form-register">
-    <h1>Регистрация</h1>
+    <h1>Тіркелу</h1>
     <form action="main.php" method="post" name="register-form" class="register-form">
       
       <div>
-        <label for="name">ФИО:</label>
-        <input type="text" name="name" id="name" placeholder="Введите ФИО">
+        <label for="name">Толық аты-жөніңіз:</label>
+        <input type="text" name="name" id="name" placeholder="Аты-жөніңізді енгізіңіз">
       </div>
 
       <div>
-        <label for="email">Почта:</label>
-        <input type="email" name="email" id="email" placeholder="Введите email">
+        <label for="email">Электрондық пошта:</label>
+        <input type="email" name="email" id="email" placeholder="Email енгізіңіз">
       </div>
 
       <div class="form-group">
-          <label>Ваш тип разработки:</label>
+          <label>Даму түрі:</label>
           <div>
-            <input type="radio" name="type-skill-dev" value="К сожалению нет"> К сожалению нет <br>
+            <input type="radio" name="type-skill-dev" value="Өкінішке орай жоқ"> Өкінішке орай жоқ <br>
             <input type="radio" name="type-skill-dev" value="Frontend"> Frontend <br>
             <input type="radio" name="type-skill-dev" value="Backend"> Backend <br>
             <input type="radio" name="type-skill-dev" value="Fullstack"> Fullstack 
@@ -35,7 +35,7 @@
       </div>
 
       <div class="form-group">
-        <label>Навыки:</label>
+        <label>Дағдылар:</label>
         <div>
           <input type="checkbox" name="skill" value="HTML/CSS"> HTML/CSS <br>
           <input type="checkbox" name="skill" value="JavaScript"> JavaScript <br>
@@ -44,12 +44,12 @@
       </div>
 
       <div class="form-group">
-        <label for="about">О себе:</label>
-        <textarea name="about" id="about" placeholder="Напишите что-нибудь о себе"></textarea>
+        <label for="about">Өз туралы:</label>
+        <textarea name="about" id="about" placeholder="Өзіңіз туралы қысқаша жазыңыз"></textarea>
       </div>
 
       <div>
-        <input type="submit" value="Зарегистрироваться">
+        <input type="submit" value="Тіркелу">
       </div>
     </form>
 </div>
