@@ -78,9 +78,10 @@ element ~ element /* барлық кейінгі элементтерді таң
 ::backdrop        /* модаль терезе фоны */
 
 a {
-    position: flex;
+    position: fixed;
     position: relative;
     position: absolute;
+    z-index: 0;
 }
 
 i {
@@ -99,3 +100,13 @@ text-underline-offset   /* смещение линии: 0px, 5px, 0.2em */
 text-shadow             /* тень текста: offsetX offsetY blurRadius color; несколько через запятую */
 letter-spacing          /* интервал между буквами: normal, 2px, -1px */
 text-indent             /* отступ первой строки: 0, 20px, -10px */
+
+
+div {
+  width: 50vw; /* ширина блока = 50% ширины окна браузера */
+}
+
+
+div2 {
+  width: 50vh; /* ширина блока = 50% ширины окна браузера */
+}

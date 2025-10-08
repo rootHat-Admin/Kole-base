@@ -8,6 +8,8 @@ button {
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
+
+    margin-right: 10px;
 }
 
 button:hover {
@@ -21,6 +23,6 @@ button:active {
 }
 
 button:focus {
-    outline: 2px solid #2e7031;
+    outline: 2px solid #0f2c10;
     outline-offset: 2px;
 }
