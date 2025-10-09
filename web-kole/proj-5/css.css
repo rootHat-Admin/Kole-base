@@ -110,3 +110,158 @@ div {
 div2 {
   width: 50vh; /* ширина блока = 50% ширины окна браузера */
 }
+
+
+----------------------------------
+
+/* Блочный элемент */
+.block-example {
+  display: block; /* Элемент занимает всю ширину и начинается с новой строки */
+}
+
+/* Строчный элемент */
+.inline-example {
+  display: inline; /* Элемент в одной строке с другими, ширина по содержимому */
+}
+
+/* Inline-block элемент */
+.inline-block-example {
+  display: inline-block; /* Элемент стоит в строке, но можно задавать ширину и высоту */
+}
+
+/* Скрытие элемента */
+.none-example {
+  display: none; /* Элемент не отображается и не занимает место */
+}
+
+/* Flex контейнер */
+.flex-example {
+  display: flex; /* Элемент становится flex-контейнером для гибкого расположения детей */
+}
+
+/* Grid контейнер */
+.grid-example {
+  display: grid; /* Элемент становится grid-контейнером для сеточной компоновки */
+}
+
+/* Элемент списка */
+.list-item-example {
+  display: list-item; /* Блочный элемент с маркером списка (как <li>) */
+}
+
+/* Таблица */
+.table-example {
+  display: table; /* Элемент ведет себя как таблица */
+}
+
+/* Строка таблицы */
+.table-row-example {
+  display: table-row; /* Элемент ведет себя как строка таблицы */
+}
+
+/* Ячейка таблицы */
+.table-cell-example {
+  display: table-cell; /* Элемент ведет себя как ячейка таблицы */
+}
+
+------------------------------------------------------------------------------------------------
+selector {
+  overflow: auto;  
+  overflow: scroll;
+}
+
+
+brg {
+  background: linear-gradient(90deg, black 20%, red 20%, blue 20%);
+
+  background: linear-gradient(at center center, black, red);
+  background: linear-gradient(at left center, black, red);
+  background: linear-gradient(at right center, black, red);
+  background: linear-gradient(at top center, black, red);
+  background: linear-gradient(at battom center, black, red);
+
+  background: linear-gradient(#f0ff4b, #ff5e00, #4faaf5);
+}
+
+------------------------------------------------------------------------------------------------
+
+        .div-g1 {
+            background: linear-gradient(90deg, black 20%, red 40%, blue 60%, rgb(173, 37, 204) 80%);
+        }
+
+        .div-g2 {
+            background: linear-gradient(180deg, black 20%, red 40%, blue 60%, rgb(173, 37, 204) 80%);
+        }
+
+        .div-g3 {
+            background: linear-gradient(240deg, black 20%, red 40%, blue 60%, rgb(173, 37, 204) 80%);
+        }
+
+        .div-g4 {
+            background: linear-gradient(0deg, black 20%, red 40%, blue 60%, rgb(173, 37, 204) 80%);
+        }
+
+        .div-g5 {
+            background: radial-gradient(at center , black, red);
+        }
+
+        .div-g6 {
+            /* background: linear-gradient(to left , black, red); */
+
+            background: radial-gradient(at left, black, red);
+        }
+
+        .div-g7 {
+            background: linear-gradient(to right , black, red);
+        }
+
+        .div-g8 {
+            background: linear-gradient(to top , black, red);
+        }
+
+        .div-g9 {
+            background: linear-gradient(to bottom , black, red);
+        }
+
+------------------------------------------------
+
+f {
+  transform: rotate(355deg);
+  transform: scaleX();
+  transform-origin: top left;
+  transform: skew(30deg);
+  
+  transition: transform 5s ease;
+}
+
+------------------------------------------------------------------------------------------------
+
+t {
+  transition: transform 5s ease;
+  transition: color .2s linear;
+  transition: width .8s linear;
+}
+
+------------------------------------------------------------------------------------------------
+
+animation {
+  animation: aitzhan 3s ease-in-out infinite;
+}
+
+@keyframes aitzhan {
+  0% {
+    background-color: #000;
+  }
+
+  30% {
+    background-color: #555;
+  }
+
+  70% {
+    background-color: #999;
+  }
+
+  100% {
+    background-color: #fff;
+  }
+}
