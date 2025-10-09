@@ -213,7 +213,7 @@ brg {
 
         .div-g7 {
             background: linear-gradient(to right , black, red);
-        }
+        }    <link rel="stylesheet" href="style.css">
 
         .div-g8 {
             background: linear-gradient(to top , black, red);
