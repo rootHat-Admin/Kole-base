@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Transform + Transition</title>
+<style>
+.box {
+  width: 150px;
+  height: 150px;
+  background: #4a90e2;
+  border-radius: 12px;
+  margin: 50px auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.box:hover {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+</style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>

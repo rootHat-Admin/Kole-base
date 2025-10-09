@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Rotation Animation</title>
+<style>
+.spinner {
+  width: 80px;
+  height: 80px;
+  border: 10px solid rgba(0,0,0,0.1);
+  border-top-color: #00b894;
+  border-radius: 50%;
+  margin: 50px auto;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+</style>
+</head>
+<body>
+  <div class="spinner"></div>
+</body>
+</html>
