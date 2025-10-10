@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .navbar {
     display: flex;
     background-color: bisque;
@@ -20,8 +26,23 @@
 }
 
 .nav-list a:hover {
-    background-color: aqua;
-    transition: background .5s ease;
-    color: red;
-    transition: color .5s ease;;
+    background-color: rgb(182, 157, 127);
+    transition: background .8s ease;
+    color: rgb(255, 248, 235);
+    transition: color .3s ease;;
+}
+
+.nav-btn {
+    display: none;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-list {
+        display: none; /* спрятать ссылки */
+    }
+    
+    .nav-btn {
+        display: block;
+    }
 }
