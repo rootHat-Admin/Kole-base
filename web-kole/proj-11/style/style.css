@@ -67,3 +67,8 @@
         background-color: rgb(66, 66, 66);
     }
 }
+
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
