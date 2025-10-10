@@ -6,12 +6,14 @@
 
 .navbar {
     display: flex;
-    background-color: bisque;
+    background-color: rgb(66, 66, 66);
     justify-content: space-between;
+    align-items: center;
+    padding-left: 8px;
 }
 
 .logo {
-    width: 40px;
+    width: 50px;
     display: block;
 }
 .nav-list {
@@ -22,27 +24,49 @@
     display: block;
     padding: 1em;
     text-decoration: none;
-    color: #000;
+    color: rgb(255, 252, 238);
 }
 
 .nav-list a:hover {
     background-color: rgb(182, 157, 127);
     transition: background .8s ease;
-    color: rgb(255, 248, 235);
+    color: rgb(133, 127, 102);
     transition: color .3s ease;;
 }
 
 .nav-btn {
     display: none;
-    font-size: 24px;
 }
 
-@media screen and (max-width: 768px) {
+@media(max-width: 768px) {
     .nav-list {
-        display: none; /* спрятать ссылки */
+        display: none; 
     }
     
     .nav-btn {
+        display: flex;
+        padding: 12px;
+        color: rgb(255, 252, 238);
+        font-size: 1.5em;
+        background: none;
+        border: none;
+
+        justify-content: center;
+        align-items: center;
+
+        padding-inline: 10px;
+    }
+    
+    .nav-btn:hover {
+        background-color: aqua;
+        transition: background 1s ease;
+        cursor: pointer;
+    }
+
+    .drop:hover .nav-list {
         display: block;
+        position: absolute;
+        right: 1px;
+        background-color: rgb(66, 66, 66);
     }
 }
