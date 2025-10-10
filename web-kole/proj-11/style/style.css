@@ -71,4 +71,6 @@
 .main-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(1);
+    background: linear-gradient(90deg, rgb(253, 255, 231), rgb(255, 186, 117), rgb(236, 182, 32) );
 }
