@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Примеры display</title>
+  <style>
+    body { 
+        font-family: Arial, sans-serif; 
+        padding: 20px; 
+    }
+    h2 { 
+        margin-top: 40px; 
+        border-bottom: 1px solid #ccc; 
+        padding-bottom: 5px; 
+    }
+
+    .block { 
+        display: block; 
+        background: lightblue; 
+        padding: 10px; 
+        margin: 5px 0; 
+    }
+
+    .inline { 
+        display: inline; 
+        background: lightgreen; 
+        padding: 5px; 
+    }
+
+    .inline-block { 
+        display: inline-block; 
+        background: orange; 
+        width: 100px; height: 50px; 
+        margin: 5px; 
+        text-align: center; 
+        line-height: 50px; 
+    }
+
+    .flex { 
+        display: flex; 
+        gap: 10px; 
+        margin: 5px 0; 
+    }
+
+    .box { 
+        background: lightcoral; 
+        padding: 10px; 
+    }
+
+    .inline-flex { 
+        display: inline-flex; 
+        gap: 10px; 
+        border: 1px solid black; 
+        padding: 5px; 
+    }
+
+    .grid { 
+        display: grid; 
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 10px; 
+        margin: 5px 0; 
+    }
+
+    .cell { 
+        background: lightseagreen; 
+        padding: 10px; 
+        text-align: center; 
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Примеры display</h1>
+
+  <h2>1. display: block</h2>
+  <div class="block">Блок 1</div>
+  <div class="block">Блок 2</div>
+
+  <h2>2. display: inline</h2>
+  <span class="inline">Текст 1</span>
+  <span class="inline">Текст 2</span>
+  <span class="inline">Текст 3</span>
+
+  <h2>3. display: inline-block</h2>
+  <div class="inline-block">1</div>
+  <div class="inline-block">2</div>
+  <div class="inline-block">3</div>
+
+  <h2>4. display: flex</h2>
+  <div class="flex">
+    <div class="box">A</div>
+    <div class="box">B</div>
+    <div class="box">C</div>
+  </div>
+
+  <h2>5. display: inline-flex</h2>
+  <div class="inline-flex">
+    <div class="box">X</div>
+    <div class="box">Y</div>
+  </div>
+  <span>← текст рядом</span>
+
+  <h2>6. display: grid</h2>
+  <div class="grid">
+    <div class="cell">1</div>
+    <div class="cell">2</div>
+    <div class="cell">3</div>
+    <div class="cell">4</div>
+    <div class="cell">5</div>
+    <div class="cell">6</div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+.navbar {
+    display: flex;
+    background-color: bisque;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 40px;
+    display: block;
+}
+.nav-list {
+    display: flex;
+}
+
+.nav-list a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    color: #000;
+}
+
+.nav-list a:hover {
+    background-color: aqua;
+    transition: background .5s ease;
+    color: red;
+    transition: color .5s ease;;
+}
