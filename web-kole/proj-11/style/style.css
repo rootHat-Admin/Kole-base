@@ -9,7 +9,7 @@
 /* НАВИГАЦИЯ */
 .navbar {
     display: flex;
-    background-color: rgb(66, 66, 66);
+    background-color: rgb(255, 255, 255);
     justify-content: space-between;
     align-items: center;
     padding-left: 8px;
@@ -28,16 +28,16 @@
 
 .nav-list a {
     display: block;
-    padding: 1em;
+    padding: 0.8em;
     text-decoration: none;
-    color: rgb(255, 252, 238); 
+    color: rgb(61, 61, 61); 
 }
 
 .nav-list a:hover {
-    background-color: rgb(98, 91, 84);
-    color: rgb(255, 252, 238);
-    transition: background 0.5s ease-in-out;
-    transition: color 0.5s ease-in-out;
+    background-color: rgb(139, 139, 139);
+    color: rgb(255, 255, 255);
+    transition: background 0.2s ease-in-out;
+    border-radius: 35px;
 
 }
 
@@ -81,7 +81,7 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(1);
-    background-color: bisque;
+    background-color: rgb(255, 252, 225);
     color: brown;
 }
 
@@ -127,6 +127,7 @@
 
 .card img {
     width: 100%;
+    border-radius: 15px;
 }
 
 .card>.info {
@@ -134,10 +135,23 @@
 
 }
 
+.info>.title {
+    font-size: 18px;
+    text-shadow: 1px 3px 6px rgba(85, 85, 85, 0.339);
+    color: rgb(29, 29, 29);
+    margin-top: 15px;
+}
+
+.info>.price {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px; 
+}
+
 .info a:first-child {
     font-size: 18px;
-    text-shadow: 5px 7px 5px rgb(28, 28, 28);
-    color: rgb(255, 255, 255);
+    text-shadow: 1px 3px 6px rgba(85, 85, 85, 0.339);
+    color: rgb(29, 29, 29);
     text-decoration: none;
 }
 
@@ -149,13 +163,15 @@
     font-size: 12px;
     font-weight: 700;
     font-family: Arial, Helvetica, sans-serif;
+    transition: transform 0.5s ease-in-out;
 }
 
 .info button:hover {
-    background-color: rgb(255, 155, 155);
+    background-color: rgb(56, 160, 63);
     color: rgb(255, 255, 255);
     cursor: pointer;
-    transition: background 2s ease-in-out;
+    transform: scale(1.0);
+    transition: background 0.2s ease-in-out;
 }
 
 .info button:active {
@@ -188,7 +204,7 @@
     }
 }
 
-@media (max-width: 412px) {
+@media (max-width: 425px) {
     .container {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(9);
