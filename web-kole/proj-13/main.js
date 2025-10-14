@@ -78,3 +78,63 @@ console.log("5 + 5 = " + (sum11));
 var sum22 = 6;
 sum22 = sum22 * 5;
 console.log("6 * 5 = " + (sum22));
+
+// -------------------------------------- //
+console.log("----------------------------");
+
+var str_1 = "10";
+var str_2 = "1"; 
+
+console.log("All-1: " + (str_1 + str_2));
+
+var str_3 = Number("7");
+var str_4 = Number("15"); 
+
+console.log("All-2.1: " + (str_3 + str_4));
+console.log("All-2.2: " + (str_3 - str_4));
+console.log("All-2.3: " + (str_3 * str_4));
+console.log("All-2.4: " + (str_3 / str_4));
+console.log("All-2.5: " + (str_3 % str_4));
+
+// -------------------------------------- //
+console.log("----------------------------");
+
+console.log("Math: " + Math.PI);
+
+console.log("Max: " + Math.max(12, 34, 2, 423, 32));
+console.log("Min: " + Math.min(12, 34, 2, 423, 32));
+
+// -------------------------------------- //
+console.log("----------------------------");
+
+var num = 10;
+
+if(num==10) {
+    console.log("True");
+} 
+
+console.log("----------------------------");
+
+var num2 = 2;
+
+if (num2 == 12) {
+    console.log("True");
+} else if (num2 >= 12) {
+    console.log("Trur");
+} else {
+    console.log("False");
+}
+
+console.log("----------------------------");
+
+var num3 = 5;
+
+if (num3 == 5) {
+    console.log("Керемет: 5");
+} else if (num3 == 4) {
+    console.log("Жарайды: 4");
+} else if (num3 == 3) {
+    console.log("Қанағаттандырады");
+} else {
+    console.log("Кате");
+}
