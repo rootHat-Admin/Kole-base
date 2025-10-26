@@ -255,10 +255,10 @@ t {
 ------------------------------------------------------------------------------------------------
 
 animation {
-  animation: aitzhan 3s ease-in-out infinite;
+  animation: varying 3s ease-in-out infinite;
 }
 
-@keyframes aitzhan {
+@keyframes varying {
   0% {
     background-color: #000;
   }
