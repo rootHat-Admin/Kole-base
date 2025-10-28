@@ -17,6 +17,6 @@
 
     </form>
     
-    <h1>Сәлем, <?php echo ($_POST['name']); ?></h1>
+    <h1>Сәлем, <?php echo htmlspecialchars($_POST['name']); ?></h1>
 </body>
 </html>
