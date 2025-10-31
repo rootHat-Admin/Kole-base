@@ -20,16 +20,16 @@
 <body>
      <form action="t.php" method="POST">
         <label for="full_name">Аты-жөні: </label> <br>
-        <input type="text" name="full_name" required> <br><br>
+        <input type="text" name="full_name" placeholder="Аты-жөні"> <br><br>
 
         <label for="username">Логин: </label> <br>
-        <input type="text" name="username" required> <br><br>
+        <input type="text" name="username" placeholder="Логин"> <br><br>
 
         <label for="email">Пошта: </label> <br>
-        <input type="email" name="email" required> <br><br>
+        <input type="email" name="email" placeholder="Пошта"> <br><br>
 
         <label for="password">Құпиясөз: </label> <br>
-        <input type="password" name="password" required> <br><br>
+        <input type="password" name="password" placeholder="Құпиясөз"> <br><br>
 
         <button type="submit">Тіркелу</button>
     </form>
