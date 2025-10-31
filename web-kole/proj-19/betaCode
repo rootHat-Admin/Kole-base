@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="register.php" method="post">
+        <label class="title" for="username">Tirkelu</label>
+
+        <label for="username">Aty:</label>
+        <input type="text" name="username">
+
+        <label for="email">Poshta:</label>
+        <input type="email" name="email" placeholder="example@gmail.com">
+
+        <label for="password">Password:</label>
+        <input type="password" name="password">
+
+        <label for="repeatpassword">Repeat password</label>
+        <input type="password" name="repeatpassword">
+
+        <button type="submit">Tirkelu</button>
+    </form>
+
+
+    <hr>
+
+    <form action="login.php" method="post">
+        <label for="username">Aty:</label>
+        <input type="text" name="username">
+
+        <label for="email">Poshta:</label>
+        <input type="email" placeholder="example@gmail.com">
+
+        <label for="password">Password:</label>
+        <input type="password" name="password">
+
+        <button type="submit">Kiur</button>
+    </form>
+    
+</body>
+</html>
+
+
+<?php 
+
+require_once('db.php');
+
+$login = $_POST['username'];
+$password = $_POST['password'];
+$repeatpassword = $_POST['repeatpassword'];
+$email = $_POST['email'];
+
+if (empty($login) || empty($password) || empty($repeatpassword) || empty($email)) {
+    echo "Барлық деректерді жазыңыз!";
+} else {
+    if ($password !== $repeatpassword) {
+        echo "Парольдер сәйкес келмейді!";
+    } else {
+        $sql = "INSERT INTO users (name, password, email) VALUES ('$login', '$password', '$email')";
+        if ($conn->query($sql) === TRUE) {
+            echo "Тіркелу сәтті өтті!";
+            echo "<a href='index.php'>Артқа оралу</a>";
+        } else {
+            echo "Қате: " . $conn->error;
+        }
+    }
+}
+?>
+
+
+<?php 
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "StudentsDB";
+
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+} else {
+    echo "Connected successfully ";
+}
+
+?>
