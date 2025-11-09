@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+form {
+    padding: 30px 40px;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    margin-bottom: 40px; 
+    text-align: center;
+}
+
+input[type="text"] {
+    border-color: #1b6ec7;
+    outline: none;  
+    border-radius: 10px;
+    padding: 5px 17px;
+
+    transition: border-color 0.18s ease;
+}
+
+input[type="text"]:hover {
+  transform: translateY(-1px);
+}
+
+input[type="text"]:focus {
+    outline: none;
+  border-color: #74f93b;            
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+input[type="number"] {
+    border-color: #1b6ec7;
+    outline: none;  
+    border-radius: 10px;
+    padding: 5px 17px;
+
+    transition: border-color 0.18s ease;
+}
+
+input[type="number"]:hover {
+  transform: translateY(-1px);
+}
+
+input[type="number"]:focus {
+  border-color: #c77c1b;            
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="server.php" method="GET">
+        <h2> ---  Іздеу --- </h2>
+        <input type="text" name="search" placeholder="Студент Аты" required>
+        <input type="submit" value="Іздеу">
+    </form>
+
+    <div id="result"></div> 
+
+    <script>
+        function loadData(query = "") {
+            const xhr = new XMLHttpRequest();
+            xhr.open("GET", "server.php?search=" + encodeURIComponent(query), true);
+
+            xhr.onload = function() {
+                if (xhr.status === 200) {
+                    document.getElementById("result").innerHTML = xhr.responseText;
+                } else {
+                    document.getElementById("result").innerHTML = "<p style='color:red;'>Қате жүктеу!</p>";
+                }
+            };
+
+            xhr.onerror = function() {
+                document.getElementById("result").innerHTML = "<p style='color:red;'>Сервер байланысы үзілді!</p>";
+            };
+
+            xhr.send();
+        }
+
+        window.onload = function() {
+            loadData();
+        };
+
+        document.getElementById("searchForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+            const value = document.getElementById("search").value;
+            loadData(value);
+        });
+    </script>
+</body>
+</html>
