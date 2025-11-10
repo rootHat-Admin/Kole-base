@@ -3,12 +3,17 @@ class BankAccount {
     public $balance = 0;
 
     public function deposit($amount) {
-        echo "Баланс: " . $this->balance = $amount . " тг <br>";
+        echo "Баланс: " . $this->balance = $amount . " тг <br><hr><br>";
     }
 
     public function withdrawal($amount) {
-        $this->balance -= $amount;
-        echo "Шығару: $amount, қалған: " . $this->getBalance() . "<br>";
+        if ($amount > $this->balance) {
+            echo "Баланстағы қаражат жеткіліксіз!<br>"; 
+        } else {
+            $this->balance -= $amount; 
+            echo "Шығару: $amount тг<br>";
+            echo "Қалған Баланс: " . $this->getBalance() . " тг <br>"; 
+        }
     }
 
     public function getBalance() {
@@ -17,8 +22,6 @@ class BankAccount {
 }
 
 $b = new BankAccount();
-$b->deposit(123500);
-$b->withdrawal(200);
+$b->deposit(12);
+$b->withdrawal(13);
 ?>
-
-//skynet@skynet:~/Desktop/web2/web-kole/proj-21$ php -S localhost:8000
