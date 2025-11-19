@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url("images/toyota-car-list.jpg") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.registration-form {
+    background: rgba(255, 255, 255, 0.95); 
+    padding: 40px 30px;
+    border-radius: 12px;
+    width: 360px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    color: #111; 
+}
+
+
+.registration-form h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #111;
+}
+
+
+.registration-form label {
+    display: block;
+    margin: 10px 0 6px;
+    font-weight: 600;
+    color: #111;
+}
+
+.registration-form input {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    outline: none;
+    background-color: #f9f9f9;
+    color: #111;
+    transition: border-color 0.2s ease;
+}
+
+.registration-form input::placeholder {
+    color: #888;
+}
+
+.registration-form input:focus {
+    border-color: #4caf50;
+}
+
+.registration-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.registration-form button:hover {
+    background-color: #43a047;
+    transform: scale(1.02);
+}
+
+.registration-form .message {
+    color: #e53935;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.registration-form p {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+.registration-form p a {
+    color: #4caf50;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.registration-form p a:hover {
+    text-decoration: underline;
+}

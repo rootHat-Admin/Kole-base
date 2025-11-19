@@ -1,0 +1,55 @@
+1- Navbar:
+- - - - - - - - -
+CountDown
+Road to Paris
+About the Games
+Olympic Shop
+Worldwide Partners
+
+2- CountDown
+- - - - - - - - -
+Olimpic Games Paris 2024
+Days
+Hours
+Minutes
+Seconds
+
+3- Road to Paris
+- - - - - - - - -
+2024 FIBA
+2024 UWV
+2024 UIPM
+2024 ISSF
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore.
+
+4- About the Games
+- - - - - - - - -
+SPORTS
+VENUES
+CELEBRATING THE GAMES
+SPECTATOR INFORMATION
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore.
+
+5- Olympic Shop
+- - - - - - - - -
+See more products
+Latin Crest T-Shirt-White
+Logo Graphic T-Shirt-White
+Plush Mascot-15 cms
+Bobble Beanie
+
+BUY NOW
+
+6- Worldwide Partners
+- - - - - - - - -
+N/A
+
+7- Footer
+- - - - - - - - -
+Download the Official App
+Follow us on
+© Copyright 2024. All rights reserved

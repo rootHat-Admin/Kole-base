@@ -1,0 +1,73 @@
+#hero {
+    background-color: #3498db;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.2em;
+}
+
+#about {
+    padding: 50px 0;
+    background-color: #ecf0f1;
+}
+
+#about p {
+    font-size: 1.1em;
+}
+
+#cars {
+    padding: 50px 0;
+}
+
+#cars .car-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+#cars .car {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+#cars .car h3 {
+    font-size: 1.5em;
+    color: #e74c3c;
+}
+
+#cars .car p {
+    font-size: 1em;
+    color: #7f8c8d;
+}
+
+#contact {
+    padding: 50px 0;
+    background-color: #ecf0f1;
+    text-align: center;
+}
+
+#contact address p {
+    font-style: normal;
+    margin: 5px 0;
+}
+
+#contact p {
+    font-size: 1.2em;
+}
+
+section {
+    padding: 20px 0;
+}

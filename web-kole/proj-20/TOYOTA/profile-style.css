@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: url("images/toyota-car-list.jpg") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+    background: #eef2f7;
+    margin: 0;
+    padding: 0;
+    color: #333;
+
+    
+}
+
+.profile-container {
+    max-width: 520px;
+    margin: 60px auto;
+    padding: 30px 25px;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: transform 0.2s;
+}
+
+.profile-container:hover {
+    transform: translateY(-3px);
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #2c3e50;
+}
+
+.avatar-section {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.avatar-section img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #32cd32;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.avatar-section img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input[type="file"],
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+    font-size: 14px;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+input[type="file"]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #32cd32;
+    box-shadow: 0 0 5px rgba(50, 205, 50, 0.3);
+    outline: none;
+}
+
+button {
+    padding: 11px 18px;
+    background-color: #32cd32;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #28a428;
+    transform: translateY(-2px);
+}
+
+.btn-logout {
+    color: #fff;
+    background-color: #e74c3c;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.btn-logout:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+}
+
+p {
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+.message {
+    color: #27ae60;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.add-button {
+    display: flex;
+    gap: 10px;
+}
+
+.add-button input[type="text"] {
+    flex: 1;
+}
+
+.add-button button {
+    width: 110px;
+    flex-shrink: 0;
+}

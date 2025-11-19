@@ -3,7 +3,8 @@ class BankAccount {
     public $balance = 0;
 
     public function deposit($amount) {
-        echo "Баланс: " . $this->balance = $amount . " тг <br><hr><br>";
+        $this->balance += $amount;
+        echo "Баланс: $amount " . " <br><hr><br>";
     }
 
     public function withdrawal($amount) {
@@ -22,7 +23,6 @@ class BankAccount {
 }
 
 $b = new BankAccount();
-$b->deposit(12);
-$b->withdrawal(13);
-
+$b->deposit(10);
+$b->withdrawal(5);
 ?>
