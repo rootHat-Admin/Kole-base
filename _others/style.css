@@ -1,0 +1,223 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Paris2024', sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
+
+header {
+    padding: 0;
+    background: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 0;
+    background: #fff;
+}
+
+.logo {
+    padding: 10px 60px;
+    display: flex;
+    align-items: center;
+    transform: skew(-25deg);       
+    border-right: 3px solid #4c9af0;
+}
+
+.logo img {
+    width: 120px; 
+    height: auto;
+    margin: 0;
+    transform: skew(25deg);
+    
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.navbar li {
+    transform: skew(-25deg);        
+    border-right: 3px solid #4c9af0;
+}
+
+.navbar a {
+    
+    display: block;
+    padding: 20px 20px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transform: skew(25deg);        
+}
+
+.hero {
+    width: 100%;
+    height: 500px;
+    background: url('media/03-images/hero-lg.png') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 20px 0; 
+    position: relative; 
+
+    clip-path: polygon(
+        0 0,        /* сол жоғарғы бұрыш - кесілмеген */
+        100% 0,     /* оң жоғарғы бұрыш - кесілмеген */  
+        100% 90%,   /* оң төменгі бұрыш - төменгі жағынан 10% кесілген */
+        0 100%      /* сол төменгі бұрыш - кесілмеген */
+    );
+}
+
+.hero h1, .hero p {
+    margin: 0;
+    padding: 0;
+}
+
+.hero h1 {
+    font-size: 50px;
+    font-weight: bold;
+    right: 10px;
+    position: absolute;
+}
+
+.hero p {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: bold;
+    font-size: 40px;
+    text-align: right;
+    position: absolute;
+    
+    top: 80px; 
+    right: 10px; 
+    
+
+}
+
+.hero img {
+    position: absolute;
+    top: 140px;
+    right: 20px; 
+    max-height: 90px; 
+
+}
+
+.mascot img {
+    position: absolute;
+    top: 400px;
+    left: 50px; 
+    max-height: 200px; 
+
+}
+
+@font-face {
+    font-family: 'Paris2024';
+    src: url('media/05-fonts/Paris2024/Paris2024-Variable.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'Paris2024', sans-serif;
+}
+
+.countdown-section {
+    background: none;
+    color: #333;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.countdown-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.countdown-title {
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #ff1919,#600053, #002b7c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.countdown-img  {
+    position: relative; 
+}
+.countdown-img img {
+    position: absolute;
+    right: 370px; 
+    top: -20px;
+
+    width: 250px;
+
+}
+.olympic-dates {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 60px 0 0 0;
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+.olympic-dates-p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-bottom: 40px;
+    line-height: 1.4;
+}
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.time-unit {
+    text-align: center;
+}
+
+.time-number {
+    font-size: 50px;
+    font-weight: bold;
+    background: none; 
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.time-label {
+    font-size: 25px;
+    margin-top: 0px;
+    color: #888888;
+    display: block; 
+}
+
+.time-separator {
+    font-size: 50px;
+    font-weight: bold;
+    color: #888888;
+    
+}
+
+.countdown-image img {
+    position: absolute;
+    top: 890px;
+    right: 0px; 
+    width: 180px; 
+}
+
+@media (max-width: 768px) {
+    
+}
