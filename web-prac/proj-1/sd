@@ -1,0 +1,56 @@
+@media (max-width: 1280px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        
+        background: #fff;
+    }
+
+    .logo {
+        padding: 30px;
+        padding-right: 620px;
+        display: flex;
+        align-items: center;
+        transform: skew(-30deg);       
+        border-right: 3px solid #4c9af0;
+    }
+
+    .logo img {
+        width: 200px; 
+        height: auto;
+        margin: 0;
+        transform: skew(30deg);
+        
+    }
+
+    .navbar ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    .navbar li {
+        transform: skew(-30deg);        
+        border-right: 3px solid #4c9af0;
+    }
+
+    .navbar a {
+        display: flex;              
+        align-items: center;       
+        justify-content: center;  
+        
+        padding: 20px 40px;            
+        height: 60px;               
+        
+        font-size: 20px;
+        font-weight: 600;
+
+        text-decoration: none;
+        color: #000;
+        cursor: pointer;
+        
+        transform: skew(30deg);     
+    }
+}
+

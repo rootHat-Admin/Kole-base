@@ -4,6 +4,12 @@
     font-family: 'Paris2024', sans-serif;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
 header {
     padding: 0;
     background: none;
@@ -12,44 +18,75 @@ header {
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px 0 20px 0;
-    transform: skew(-25deg);
+    align-items: stretch;
+    background: #fff;
+    padding: 0px;
 }
 
-.navbar ul {
-    list-style-type: none;
+.logo {
     display: flex;
-    gap: 20px;
-}
-
-.navbar a {
-    border-right: 2px solid #333333;
-    border-left: 2px solid #333333;
-    padding: 10px 20px;
-    font-size: 12px;
-    text-decoration: none;
-    color: #000; 
-    font-weight: bold;
-    cursor: pointer;
-    transform: skew(25deg);
+    align-items: center; 
+    border-right: 3px solid #4c9af0;
+    padding: 10px;
+    padding-right: 640px;
+    transform: skew(-30deg);
 }
 
 .logo img {
-    width: 100px; 
+    width: 150px; 
     height: auto;
     margin: 0;
-    transform: skew(25deg);
+    transform: skew(30deg);
 }
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    transform: skew(-30deg);        
+    border-right: 3px solid #4c9af0;
+    margin-right: 35px; 
+}
+
+.navbar a {
+    display: flex;              
+    align-items: center;       
+    justify-content: center;  
+    
+    padding: 10px 40px;            
+    height: 80px;               
+    
+    font-size: 16px;
+    text-decoration: none;
+    color: #000;
+
+    cursor: pointer;
+    
+    transform: skew(30deg);     
+}
+
 
 .hero {
     width: 100%;
     height: 500px;
-    background: url('media/03-images/hero-lg.png') no-repeat center center;
+    
+    background: url('media/03-images/hero-lg.png') ;
     background-size: cover;
+    background-position: center; 
     color: white;
     padding: 20px 0; 
     position: relative; 
+
+    clip-path: polygon(
+        0 0,        /* сол жоғарғы бұрыш  */
+        100% 0,     /* оң жоғарғы бұрыш  */  
+        100% 90%,   /* оң төменгі бұрыш */
+        0 100%      /* сол төменгі бұрыш */
+    );
 }
 
 .hero h1, .hero p {
@@ -73,6 +110,8 @@ header {
     
     top: 80px; 
     right: 10px; 
+    
+
 }
 
 .hero img {
@@ -80,12 +119,12 @@ header {
     top: 140px;
     right: 20px; 
     max-height: 90px; 
-    
+
 }
 
 .mascot img {
     position: absolute;
-    top: 400px;
+    top: 380px;
     left: 50px; 
     max-height: 200px; 
 
@@ -94,7 +133,7 @@ header {
 @font-face {
     font-family: 'Paris2024';
     src: url('media/05-fonts/Paris2024/Paris2024-Variable.ttf');
-    font-weight: normal;
+    
     font-style: normal;
 }
 
@@ -103,18 +142,984 @@ body {
     font-family: 'Paris2024', sans-serif;
 }
 
-.home p{
-    margin-top: 20px;
-
+.countdown-section {
+    background: #fff;
+    color: #333;
+    padding: 80px 20px;
     text-align: center;
-    font-size: 60px;
-    font-weight: bold;
-        background-image: linear-gradient(to right, #007bff, #b300a7); 
+    margin-bottom: 100px; /* -- */
+}
 
-.home img{
+.countdown-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.countdown-title {
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #ff1919,#600053, #002b7c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.countdown-img  {
+    position: relative; 
+}
+.countdown-img img {
     position: absolute;
-    top: 800px;
-    left: 50px; 
-    max-height: 200px;
+    right: 50%; 
+    top: -20px;
+    width: 250px;
+}
+
+.olympic-dates {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 60px 0 0 0;
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+.olympic-dates-p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-bottom: 40px;
+    line-height: 1.4;
+}
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.time-unit {
+    text-align: center;
+}
+
+.time-number {
+    font-size: 50px;
+    font-weight: bold;
+    background: none; 
+    padding: 0;
+    border-radius: 10px;
+}
+
+.time-label {
+    font-size: 20px;
+    margin-top: 0px;
+    color: #888888;
+    display: block;
+}
+
+.time-separator {
+    font-size: 50px;
+    font-weight: bold;
+    color: #888888;
+    
+}
+
+.countdown-image img {
+    position: absolute;
+    top: 890px;
+    right: 0px; 
+    width: 180px; 
+}
+
+.roadToParis {
+    background: #d5e2f0;
+    color: #333;
+    padding: 80px 20px;
+    text-align: center;
+    clip-path: polygon(
+        0 10%,      
+        100% 0,    
+        100% 90%,    
+        0 100%      
+    );
+}
+
+.road-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.road-title{
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #ff1919,#600053, #002b7c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.road-img  {
+    position: relative; 
+    margin-bottom: 50px;
+}
+.road-img img {
+    position: absolute;
+    right: 200px; 
+    top: -20px;
+    width: 250px;
+}
+
+.road-Card {
+    background: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.Card {
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.Card img {
+    max-width: 100%;
+    height: auto;
+}
+.Card-info {
+    margin: 5px;
+}
+.Card-info h2 {
+    font-size: 14px;
+    text-align: left;
+}
+
+.Card-info p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: #888888;
+    text-align: left;
+    font-size: 10px;
+
+    margin-top: 5px;
+}
+
+.Card-info h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    text-align: left;
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+.Card-button {
+    position: relative;
+    left: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.Card-button img {
+    background-color: #333;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.Card-button img:hover {
+    background-color: #ffffff;
+    transform: scale(1.05);
+}
+
+.Card-button p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 10px;
+    color: #333;
+    margin: 0 10px;
+}
+
+.AboutTheCames {
+    background: #fff;
+    color: #333;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.AboutTheCames-info {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.About-title {
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #ff1919,#600053, #002b7c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.About-img {
+    position: relative; 
+}
+.About-img img {
+    position: absolute;
+    right: 450px; 
+    top: -25px;
+    width: 230px;
+}
+
+.About-Card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cardAbout {
+    background-color: #d5e2f0;
 
 }
+
+.cardAbout img {
+    max-width: 100%;
+    height: auto;
+}
+
+.cardAbout h2 {
+    background-color: #ed2939;
+    font-size: 10px;
+    color: #fff;
+    padding: 5px;
+    text-align: left;  
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;   
+}
+
+.AboutCard-info {
+    margin: 5px;
+}
+
+
+.AboutCard-info p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: #333;
+    text-align: left;
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+.AboutCard-info h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    text-align: left;
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+.AboutCard-button{
+    position: relative;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.AboutCard-button img {
+    width: 90px;
+    cursor: pointer;
+}
+
+.OlympicShop {
+    background: #d5e2f0;
+    color: #333;
+    padding: 80px 20px;
+    text-align: center;
+    clip-path: polygon(
+        0 10%,      
+        100% 0,    
+        100% 90%,    
+        0 100%      
+    );
+}
+
+.OlympicShop-container{
+    
+    max-width: 800px;
+    margin: 0 auto;
+}
+.Olympic-title {
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #ff1919,#600053, #002b7c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.Olympic-img  {
+    position: relative; 
+    margin-bottom: 50px;
+}
+.Olympic-img img {
+    position: absolute;
+    right: 150px; 
+    top: -20px;
+    width: 250px;
+}
+
+.OlympicShop-a {
+    
+    position: relative;
+    left: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.OlympicShop-a a {
+    color: #333;
+}
+
+.Olympic-Card {
+    background: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.CardOlympic {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.CardOlympic img {
+    border: 1px solid #d5e2f0;
+    max-width: 100%;
+    height: auto;
+}
+.CardOlympic-info {
+    margin: 5px 0px 0px 0px;
+}
+.CardOlympic-info h2 {
+    font-size: 12px;
+    text-align: left;
+}
+
+.ButtonOlympic {
+    margin: 10px 0px 0px 0px;
+    display: flex;              
+    justify-content: space-between; 
+    align-items: center;         
+}
+.ButtonOlympic a {
+    font-size: 10px;
+    text-decoration: none;
+    padding: 8px 22px;
+    background-color: #333;
+    color: white;
+    border-radius: 4px;
+}
+.ButtonOlympic h3 {
+    color: #888;
+    margin-right: 10px; 
+}
+
+
+.CardOlympic-button {
+    position: relative;
+    left: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.CardOlympic-button img {
+    background-color: #333;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.CardOlympic-button img:hover {
+    background-color: #ffffff;
+    transform: scale(1.05);
+}
+
+.CardOlympic-button p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 10px;
+    color: #333;
+    margin: 0 10px;
+}
+
+.Worldwide {
+    background: #fff;
+    color: #333;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.Worldwide-container{
+    
+    max-width: 800px;
+    margin: 0 auto;
+}
+.Worldwide-title {
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #ff1919,#600053, #002b7c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.Worldwide-img  {
+    position: relative; 
+    margin-bottom: 50px;
+}
+.Worldwide-img img {
+    position: absolute;
+    right: 450px; 
+    top: -20px;
+    width: 250px;
+   
+}
+
+.Worldwide-Card {
+    background: none;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.WorldwideCard img {
+    width: 100px;
+    margin-top: 30px;
+
+}
+
+#burger {
+    display: none;
+}
+
+label[for="burger"] {
+    font-size: 30px;
+    cursor: pointer;
+    color: #333;
+    display: none; 
+    position: fixed;
+    top: 12px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.container nav {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+   
+    background: #fff;
+    padding-top: 50px;
+    z-index: 999;
+
+    border: 1px solid #999;
+
+    border-radius: 0px 0px 20px 20px;
+}
+
+.container nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.container nav ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+#burger:checked + label + nav {
+    display: block;
+}
+
+footer {
+    color: #fff;
+    
+    background: linear-gradient(
+        to right,
+        #474747 0%,
+        #474747 50%,
+        #333333 50%,
+        #333333 100%
+    );
+    clip-path: polygon(
+        0 10%,      
+        100% 0,    
+        100% 90%,    
+        0 100%      
+    );
+
+}
+
+footer {
+    color: #fff;
+    background: linear-gradient(
+        to right,
+        #474747 0%,
+        #474747 50%,
+        #333333 50%,
+        #333333 100%
+    );
+    clip-path: polygon(
+        0 10%,      
+        100% 0,    
+        100% 100%,    
+        0 100%      
+    );
+    padding: 20px;
+}
+
+footer .footer-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    gap: 150px; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.app-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
+    margin-left: 0px;        
+
+    font-size: 12px;
+    font-weight: normal;
+
+    margin-top: 20px;
+}
+
+
+.app-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;       
+    align-items: center;              
+
+    font-size: 12px;
+    font-weight: normal;
+
+    margin-top: 20px;
+}
+
+.app-2 h4 {
+    text-align: left;       
+    width: 100%;     
+}
+
+footer .footer-container-2 {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    gap: 10px;             
+    margin-top: 80px;
+}
+
+footer .logoSite img {
+    width: 150px; 
+}
+
+footer .author h4 {
+    margin-top: 80px;
+    font-size: 10px;
+    font-weight: normal;
+    text-align: center;
+}
+
+
+@media (max-width: 1024px) {
+    .logo {
+        padding: 20px;
+        padding-right: 400px;
+    }
+
+    label[for="burger"] {
+        font-size: 40px;
+        display: block;
+        position: absolute;
+    }
+
+    .navbar .ull {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 75px;
+        font-weight: bold;
+        right: 3%;
+        position: absolute;
+    }
+
+    .hero p {
+        color: rgba(255, 255, 255, 0.9);
+        font-weight: bold;
+        font-size: 50px;
+        text-align: right;
+        position: absolute;
+        
+        top: 100px; 
+        right: 30px; 
+
+    }
+
+    .hero img {
+        position: absolute;
+        top: 180px;
+        right: 50px; 
+        max-height: 150px; 
+
+    }
+
+    .mascot img {
+        position: absolute;
+        top: 370px;
+        right: 10px; 
+        max-height: 230px; 
+    }
+
+    .hero {
+        background: url('media/03-images/hero-lg.png') no-repeat center ;
+        background-size: cover;
+    }
+
+    .countdown-img img {
+        position: absolute;
+        right: 350px; 
+        top: -25px;
+        width: 250px;
+        height: auto;
+    }
+
+    .time-number {
+        font-size: 85px;
+        font-weight: 550;
+        background: none; 
+        padding: 0;
+        border-radius: 10px;
+    }
+
+    .time-label {
+        font-size: 30px;
+        margin-top: 0px;
+        color: #888888;
+        display: block;
+    }
+    
+    .countdown-image img {
+        position: absolute;
+        top: 1080px;
+        right: 250px; 
+        width: 350px; 
+    }
+
+    /* === 2 - roadToParis === */
+
+    .road-Card {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .road-Card > :nth-child(n+3) {
+        display: none;
+    }
+
+    .Card {
+        background-color: #fff;
+        border-radius: 3px;
+    }
+
+    .Card img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .Card-info {
+        margin: 5px;
+    }
+    .Card-info h2 {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .Card-info p {
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .Card-info h4 {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .Card-button {
+        left: 300px;
+        margin-top: 20px;
+    }
+
+    .Card-button img {
+        width: 45px;
+        height: 40px;
+    }
+
+    .Card-button p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: normal;
+        font-size: 12px;
+        color: #333;
+        margin: 0 10px;
+    }
+
+    /* === 3 - About-Card === */
+    .About-Card {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .About-Card > :nth-child(n+3) {
+        display: none;
+    }
+
+    /* === 4 - Olympic-Card === */
+    .Olympic-Card {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .Olympic-Card> :nth-child(n+3) {
+        display: none;
+    }
+    .OlympicShop-a {
+
+    }
+    /* === 5 - Worldwide-Card === */
+
+    .Worldwide-Card {
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 20px;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .app-1 img {
+        width: 100%;
+    }
+    .app-2 img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+   
+
+    .logo {
+        padding: 10px;
+        padding-right: 300px;
+    }
+
+    label[for="burger"] {
+        font-size: 20px;
+        display: block;
+        position: absolute;
+    }
+
+    .navbar .ull {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+        font-weight: bold;
+        right: 3%;
+        position: absolute;
+    }
+
+    .hero p {
+        color: rgba(255, 255, 255, 0.9);
+        font-weight: bold;
+        font-size: 25px;
+        text-align: right;
+        position: absolute;
+        
+        top: 65px; 
+        right: 30px; 
+
+    }
+
+    .hero img {
+        position: absolute;
+        top: 120px;
+        right: 50px; 
+        max-height: 150px; 
+
+    }
+
+    .mascot img {
+        position: absolute;
+        top: 400px;
+        left: 120px; 
+        max-height: 150px; 
+    }
+
+    .hero {
+        background: url('media/03-images/hero-lg.png') no-repeat center ;
+        background-size: cover;
+    }
+
+    .countdown-img img {
+        position: absolute;
+        right: 150px; 
+        top: -25px;
+        width: 230px;
+        height: auto;
+    }
+
+    .countdown-image img {
+        position: absolute;
+        top: 1000px;
+        right: 50px; 
+        width: 350px; 
+    }
+
+    .road-Card {
+        grid-template-columns: 1fr; 
+    }
+
+
+    /* === 2 - roadToParis === */
+
+    .road-Card {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .road-Card > :nth-child(n+2) {
+        display: none;
+    }
+
+    .Card {
+        background-color: #fff;
+        border-radius: 3px;
+    }
+
+    .Card img {
+        max-width: 100%;
+        height: auto;
+    }
+    .Card-info {
+        margin: 5px;
+    }
+    .Card-info h2 {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .Card-info p {
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .Card-info h4 {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .Card-button {
+        left: 300px;
+        margin-top: 20px;
+    }
+
+    .Card-button img {
+        width: 45px;
+        height: 40px;
+    }
+    .Card-button p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: normal;
+        font-size: 12px;
+        color: #333;
+        margin: 0 10px;
+    }
+    /* === 3 - About-Card === */
+    .About-Card {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .About-Card > :nth-child(n+2) {
+        display: none;
+    }
+
+    /* === 4 - Olympic-Card === */
+
+    .Olympic-Card {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .Olympic-Card> :nth-child(n+2) {
+        display: none;
+    }
+    .OlympicShop-a {
+
+    }
+    /* === 5 - Worldwide-Card === */
+
+    .Worldwide-Card {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .app-1 img {
+        width: 100%;
+    }
+    .app-2 img {
+        width: 100%;
+    }
+
+}
+
+
