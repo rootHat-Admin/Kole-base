@@ -21,8 +21,33 @@
     </main>
     <script>
         function LongestWord(text) {
-                
+            const words = text.split(' ');
+            let longWord = '';
+
+            for (const word of words) {
+                if (word.length > longWord.length) {
+                    longWord = word;
+                }
+            }
+            return longWord;
         }
+
+        const textarea = document.getElementById('text');
+        const button = document.getElementById('calc');
+        const message = document.getElementById('message');
+
+        button.addEventListener('click', () => {
+            const text = textarea.value.trim();
+
+            if (text === '') {
+                message.innerHTML = 'Мәтінді енгізіңіз!';
+                return;
+            }
+
+            const longestWord = LongestWord(text);
+
+            message.innerHTML = `Ең ұзын сөз: <i class="font-bold">${longestWord}</i>`;
+        });
     </script>
 </body>
 </html>
