@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px 30px;
+
+            
+            background-color: rgb(20, 20, 20);
+            border: 2px solid #ffffff;
+        }
+
+        .container p {
+            color: #fff;
+
+            background-color: rgb(19, 116, 71);
+            padding: 30px;
+            gap: 5px;
+            border: 2px solid #56c99f;
+            border-radius: 10px;
+        }
+        .item3 {
+            flex: -10 0 50px
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1"><p>Текст 1</p></div>
+        <div class="item2"><p>Текст 2</p></div>
+        <div class="item3"><p>Текст 3</p></div>
+        <div class="item4"><p>Текст 4</p></div>
+        <div class="item5"><p>Текст 5</p></div>
+        <div class="item6"><p>Текст 6</p></div>
+    </div>
+</body>
+</html>

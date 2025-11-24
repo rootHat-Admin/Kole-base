@@ -4,9 +4,7 @@
     font-family: 'Paris2024', sans-serif;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
+body {
     overflow-x: hidden; 
 }
 
@@ -28,8 +26,8 @@ header {
     align-items: center; 
     border-right: 3px solid #4c9af0;
     padding: 10px;
-    padding-right: 640px;
-    transform: skew(-30deg);
+    padding-right: 430px;
+    transform: skew(-30deg); 
 }
 
 .logo img {
@@ -147,7 +145,7 @@ body {
     color: #333;
     padding: 80px 20px;
     text-align: center;
-    margin-bottom: 100px; /* -- */
+    margin-bottom: 100px; 
 }
 
 .countdown-container {
@@ -259,7 +257,7 @@ body {
 }
 .road-img img {
     position: absolute;
-    right: 200px; 
+    right: 150px; 
     top: -20px;
     width: 250px;
 }
@@ -758,9 +756,13 @@ footer .author h4 {
 
 
 @media (max-width: 1024px) {
+    .body {
+        overflow-x: hidden;
+    }
+
     .logo {
         padding: 20px;
-        padding-right: 400px;
+        padding-right: 250px;
     }
 
     label[for="burger"] {
@@ -945,11 +947,13 @@ footer .author h4 {
 }
 
 @media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
    
-
     .logo {
         padding: 10px;
-        padding-right: 300px;
+        padding-right: 70px;
     }
 
     label[for="burger"] {
@@ -983,9 +987,9 @@ footer .author h4 {
 
     .hero img {
         position: absolute;
+        right: 70px;
         top: 120px;
-        right: 50px; 
-        max-height: 150px; 
+        max-height: 120px; 
 
     }
 
@@ -999,6 +1003,18 @@ footer .author h4 {
     .hero {
         background: url('media/03-images/hero-lg.png') no-repeat center ;
         background-size: cover;
+    }
+
+    .time-number {
+        font-size: 60px;
+    }
+
+    .time-label {
+        font-size: 20px;
+    }
+
+    .About-title {
+        font-size: 45px;
     }
 
     .countdown-img img {
@@ -1015,6 +1031,25 @@ footer .author h4 {
         right: 50px; 
         width: 350px; 
     }
+
+    .About-img img {
+        position: absolute;
+        right: 0px; 
+        top: -25px;
+        width: 230px
+    }
+
+    .Worldwide-title {
+        font-size: 40px;
+    }
+
+    .Worldwide-img img {
+        position: absolute;
+        right: 0px; 
+        top: -20px;
+        width: 230px; 
+    }
+    
 
     .road-Card {
         grid-template-columns: 1fr; 
