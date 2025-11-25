@@ -17,14 +17,32 @@
                         <th>Output</th>
                     </tr>
                     <tr>
-                      <th>[1, 2, 3, 4, 5]</th>
+                      <th>[1, 2, 6, 4, 5]</th>
                       <td>9</td>
                     </tr>
                 </table>
         </div>
     </main>
     <script>
-        // Work Here
+        // Екі ең үлкен бүтін санның қосындысын есептейтін функция
+        function sumTwoLargest(arr) {
+            if (arr.length < 2) return 0; // Егер массивте екі элементтен аз болса, 0 қайтарады
+            let sorted = arr.slice().sort((a, b) => b - a); // Массивті кему ретімен сұрыптау
+            return sorted[0] + sorted[1]; // Екі ең үлкен санды қосу
+        }
+
+        // Мысал: кестеден деректерді алу
+        const table = document.querySelector('table tr:nth-child(2) th'); // Input ұяшығын таңдау
+        const out = document.querySelector('table tr:nth-child(2) td'); // Output ұяшығын таңдау
+
+        // Мәтінді массивке айналдыру
+        const inputArray = JSON.parse(table.textContent);
+
+        // Екі ең үлкен санның қосындысын есептеу
+        const result = sumTwoLargest(inputArray);
+
+        // Нәтижені кестеге шығару
+        out.textContent = result;
     </script>
 </body>
 </html>

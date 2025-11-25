@@ -51,14 +51,16 @@ function fastestRunners(runners) {
 
 // функциядан кейін: JSON файлын жүктеу және нәтижені HTML-ге шығару
 fetch("js/runners.json")
-.then(res => res.json()) // JSON-ды массивке ауыстыру
-.then(data => {
-    const fastest = fastestRunners(data);  // тезірек жүгіргендерді алу
-    const fastestEl = document.getElementById("fastest"); // HTML элементін таңдау
-    fastestEl.innerHTML = `
-        <strong>Ең жылдам жүгірушілер:</strong>
-        <ul>
-        ${fastest.map(r => `<li>${r.name} - орташа қарқын: ${r.averagePace}, ең жылдам: ${r.fastestPace}</li>`).join("")}
-        </ul>
+  .then(r => r.json())
+  .then(data => {
+    document.getElementById("fastest").innerHTML = `
+      <strong>Ең жылдам жүгірушілер:</strong>
+      <ul>
+        ${
+          fastestRunners(data)
+            .map(r => `<li>${r.name} - орташа қарқын: ${r.averagePace}, ең жылдам: ${r.fastestPace}</li>`)
+            .join("")
+        }
+      </ul>
     `;
-});
+  });

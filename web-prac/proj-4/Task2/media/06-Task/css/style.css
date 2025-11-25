@@ -1,1 +1,27 @@
-/* Work here */
+.wrap { 
+  counter-reset: total 0; /* начинаем счетчик total с 0 */
+}
+
+input[type="checkbox"] { 
+    display: none;
+}
+
+label.box { 
+    display: inline-flex;
+    justify-items: center;
+    align-items: center;
+
+    padding: 30px;
+    border: 5px solid black;
+}
+
+/* Если выбран чекбокс, фон золотой и увеличиваем counter */
+#c10:checked + label.box { background: gold; counter-increment: total 10; }
+#c32:checked + label.box { background: gold; counter-increment: total 32; }
+#c64:checked + label.box { background: gold; counter-increment: total 64; }
+#cneg:checked + label.box { background: gold; counter-increment: total -15; }
+
+/* Элемент для вывода суммы */
+.total span::before {
+  content: counter(total);
+}

@@ -4,8 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>08- Task</title>
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #2a4b4c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: grid;
+            gap: 15px;
+            width: 1000px;
+            
+            /* 4 колонки */
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            /* 3 строки */
+            grid-template-rows: 1fr 1fr 1fr;
+            
+            /* Определяем grid areas по вашему макету */
+            grid-template-areas:
+                "A A B C"
+                "A A D D"
+                "E F D D";
+        }
+
+        .item {
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+            border: 5px solid #fff;
+           
+            background-color: #ddd;
+        }
+
+        /* Назначаем элементы в grid areas */
+        .a { grid-area: A; }
+        .b { grid-area: B; }
+        .c { grid-area: C; }
+        .d { grid-area: D; }
+        .e { grid-area: E; }
+        .f { grid-area: F; }
+    </style>
+    </style>
+
 </head>
 <body>
-    
+    <div class="container">
+        <img src="images/ani01.png" class="item a">
+        <img src="images/ani02.png" class="item b">
+        <img src="images/ani03.png" class="item c">
+        <img src="images/ani04.png" class="item d">
+        <img src="images/ani05.png" class="item e">
+        <img src="images/ani06.png" class="item f">
+    </div>
 </body>
 </html>

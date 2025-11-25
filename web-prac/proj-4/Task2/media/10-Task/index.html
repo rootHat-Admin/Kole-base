@@ -6,8 +6,27 @@
     <title>10- Task</title>
     <script src="js/tailwindcss-3.4.4.js"></script>
     <link rel="stylesheet" href="css/daisyui.min.css">
-    <style>
+        <style>
         /* Work Here */
+        .steps {
+            width: 250px; /* Бір кадрдың ені */
+            height: 300px; /* Бір кадрдың биіктігі */
+            background-image: url('images/sprite.png'); /* Спрайт суреті */
+            
+            background-position: 0 0;
+            
+            /* Анимацияны анықтау */
+            animation: sprite-animation 1s steps(4) infinite;
+        }
+
+        @keyframes sprite-animation {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: -1030px 0; 
+            }
+        }
     </style>
 </head>
 <body class="min-h-[100vh] flex justify-center items-center bg-slate-400">
