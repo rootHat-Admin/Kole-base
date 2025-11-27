@@ -1,0 +1,28 @@
+.wrap {
+    counter-reset: total 0;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+label.box {
+    display: inline-flex;
+    justify-items: center;
+    align-items: center;
+
+    padding: 30px;
+    border: 2px solid black;
+}
+
+#c10:checked + label.box{ background: gold; counter-increment: total 10;}
+#c32:checked + label.box{ background: gold; counter-increment: total 32;}
+#c64:checked + label.box{ background: gold; counter-increment: total 64;}
+#c-15:checked + label.box{ background: gold; counter-increment: total -15;}
+
+.total {
+    margin-top: 20px;
+}
+.total span::before {
+    content: counter(total);
+}

@@ -38,8 +38,8 @@ function fastestRunners(runners) {
 
 	// орташа уақыттан тезірек жүгіргендерді сүзгіден өткізіп, уақыт бойынша сұрыптау
 	const faster = withTotal
-		.filter(r => r.totalTime < avgTotal)
-		.sort((a, b) => a.totalTime - b.totalTime);
+	.filter(r => r.totalTime < avgTotal)
+	.sort((a, b) => a.totalTime - b.totalTime);
 		
 	// нәтижелік массивті құру
 	return faster.map(r => {
@@ -50,17 +50,10 @@ function fastestRunners(runners) {
 }
 
 // функциядан кейін: JSON файлын жүктеу және нәтижені HTML-ге шығару
-fetch("js/runners.json")
-  .then(r => r.json())
-  .then(data => {
-    document.getElementById("fastest").innerHTML = `
-      <strong>Ең жылдам жүгірушілер:</strong>
-      <ul>
-        ${
-          fastestRunners(data)
-            .map(r => `<li>${r.name} - орташа қарқын: ${r.averagePace}, ең жылдам: ${r.fastestPace}</li>`)
-            .join("")
-        }
-      </ul>
-    `;
-  });
+fetch("js/runners.json").then(r => r.json()).then(data => {
+	document.getElementById("fastest").innerHTML = `<strong>Ең жылдам жүгірушілер:</strong>
+    <ul>
+    ${fastestRunners(data).map(r => `<li>${r.name} - орташа қарқын: ${r.averagePace}, ең жылдам: ${r.fastestPace}</li>`).join("")}
+    </ul>`;
+
+});

@@ -1,9 +1,9 @@
 .wrap { 
-  counter-reset: total 0; /* начинаем счетчик total с 0 */
+  counter-reset: total 0; /* total есептегішін 0-ден бастаймыз */
 }
 
 input[type="checkbox"] { 
-    display: none;
+    display: none;  /* checkbox-ты көрсетпейміз (жасырамыз) */
 }
 
 label.box { 
@@ -15,13 +15,13 @@ label.box {
     border: 5px solid black;
 }
 
-/* Если выбран чекбокс, фон золотой и увеличиваем counter */
+/* Егер checkbox белгіленсе, фон алтын түске боялады және counter-ге қосамыз */
 #c10:checked + label.box { background: gold; counter-increment: total 10; }
 #c32:checked + label.box { background: gold; counter-increment: total 32; }
 #c64:checked + label.box { background: gold; counter-increment: total 64; }
 #cneg:checked + label.box { background: gold; counter-increment: total -15; }
 
-/* Элемент для вывода суммы */
+/* Жалпы соманы көрсету үшін элемент */
 .total span::before {
   content: counter(total);
 }
