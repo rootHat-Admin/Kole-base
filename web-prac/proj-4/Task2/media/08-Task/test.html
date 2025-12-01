@@ -6,27 +6,23 @@
     <title>08- Task</title>
     <style>
         body {
-            margin: 0;
-            padding: 20px;
-            background-color: #2a4b4c;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+
+            margin: 0;
+            padding: 20px;
+            background-color: #435455;
         }
 
         .container {
             display: grid;
             gap: 15px;
-            width: 1000px;
-            
-            /* 4 баған */
+
             grid-template-columns: 1fr 1fr 1fr 1fr;
-            /* 3 жол */
             grid-template-rows: 1fr 1fr 1fr;
-            
-            /* Grid аймақтарын макетке сәйкес анықтау */
-            grid-template-areas:
+            grid-template-areas: 
                 "A A B C"
                 "A A D D"
                 "E F D D";
@@ -37,18 +33,10 @@
             height: 100%;
             border-radius: 8px;
             border: 5px solid #fff;
-        
-            background-color: #ddd;
         }
 
-        /* Элементтерді grid аймақтарына орналастыру */
-        .a { grid-area: A; }
-        .b { grid-area: B; }
-        .c { grid-area: C; }
-        .d { grid-area: D; }
-        .e { grid-area: E; }
-        .f { grid-area: F; }
-        </style>
+        
+    </style>
 
 </head>
 <body>
