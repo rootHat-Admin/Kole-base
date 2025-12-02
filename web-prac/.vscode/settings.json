@@ -1,3 +1,4 @@
 {
-    "livePreview.defaultPreviewPath": "/proj-1/in.html"
+    "livePreview.defaultPreviewPath": "/proj-1/in.html",
+    "liveServer.settings.multiRootWorkspaceName": "web-prac"
 }
