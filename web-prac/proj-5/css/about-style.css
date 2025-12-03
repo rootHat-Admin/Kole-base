@@ -1,0 +1,85 @@
+/* About секция */
+.about {
+    padding: 80px 20px;
+    background-color: #fff;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+/* Левая часть - картинка */
+.about-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-image img {
+    width: 100%;
+    height: 500px; /* Фиксированная высота как на картинке */
+    object-fit: cover; /* Обрезаем картинку чтобы заполнила */
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* Правая часть - текст */
+.about-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.about-subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* Две колонки текста */
+.about-text-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Две равные колонки */
+    gap: 40px; /* Отступ между колонками */
+}
+
+.text-column p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* Адаптивность */
+@media (max-width: 992px) {
+    .about-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .about-image, .about-content {
+        width: 100%;
+    }
+    
+    .about-image img {
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-text-columns {
+        grid-template-columns: 1fr; /* На мобильных одна колонка */
+        gap: 20px;
+    }
+}

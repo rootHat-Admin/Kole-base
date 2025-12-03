@@ -1,0 +1,8 @@
+cd ~/Desktop/web2/web-prac/proj-6/server
+
+npx json-server --watch json/db.json
+
+порт 3000.
+http://localhost:3000/countries
+
+
