@@ -25,14 +25,14 @@
         align-items: center;
         justify-content: center; 
         position: relative; 
-        padding: 20px;
+        padding-top: 20px;
         width: 100%;
-        box-sizing: border-box;
+        
     }
 
     .back-btn {
         position: absolute; 
-        left: 10px; 
+        left: 20px; 
         top: 50%;
         transform: translateY(-50%);
     }
@@ -48,20 +48,21 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        margin: 20px 0;
+        margin: 0;
     }
 
     .country-info h1 {
         color: #fff;
         font-size: 3.5rem;
-        
-        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        margin: 0;
     }
 
     .country-info img {
-        width: 40%;
+        width: 35%;
         height: auto;
-        margin-bottom: 20px;
+        margin: 0;
+        margin-top: 20px;
+        margin-bottom: 30px;
     }
 
     .medal-info {
@@ -69,13 +70,19 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        margin: 20px 0;
+        margin: 0;
+    }
+
+    .medal-info h1 {
+        font-size: 1.5rem;
+        margin: 0px 0;
     }
 
     .medal-info p {
         color: #fff;
         font-size: 5rem;
-        margin: 0 0 20px 0;
+        font-weight: bold;
+        margin: 0;
         text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     }
 
@@ -86,7 +93,6 @@
 
     .table-info table {
         width: 100%;
-        
         border-collapse: collapse;
         margin-bottom: 20px;
         border-left: 1px solid #fff;   
@@ -96,28 +102,36 @@
 
         font-weight: normal;
         
-        font-size: 21px;
+        font-size: 22px;
     }
 
     .table-info th {
-        padding: 0px 0px 20px 0;
+        padding: 0px 0px 12px 0;
         text-align: center;
-        border-left: 1px solid #fff;  
-        border-right: 1px solid #fff; 
+        border-left: 1px solid #dedede;  
+        border-right: 1px solid #dedede; 
         border-top: none;   
         border-bottom: none;
-    }
-    .table-info td {
-        padding: 10px 20px;
-        text-align: center;
-        border-left: 1px solid #fff;  
-        border-right: 1px solid #fff; 
-        border-top: 1px solid #fff;   
-        border-bottom: none;
+        font-size: 1.6rem;
     }
     
+    .table-info td {
+        padding: 16px;
+        text-align: center;
+        border-left: 1px solid #dedede;  
+        border-right: 1px solid #dedede; 
+        border-top: 1px solid #dedede;   
+        border-bottom: none;
+    }
 
+    .table-info td:first-child {
+        text-align: left;
+    }
 
+    .table-info td > a {
+        color: #fff;
+    }
+    
     .medals-section {
         display: flex;
         flex-direction: column;

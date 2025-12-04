@@ -76,7 +76,7 @@
         justify-content: flex-start;
         gap: 10px;                  
         cursor: pointer;
-        margin-top: 5px;
+        margin-top: 7px;
 
         padding: 0.5rem 1rem;      
         background-color: rgba(255, 255, 255, 0.3);
@@ -85,6 +85,8 @@
         border: 2px solid #fff;
 
         transition: all 0.3s ease;  
+
+        text-decoration: none;
     }
 
     .item-Countries:hover {
@@ -98,12 +100,10 @@
         height: 50px;
     }
 
-    .item-Countries a {
-        margin-right: 120px;
-        
-        text-decoration: none;
+    .item-Countries > p {
+        margin: 0;          
+        margin-right: 70px; 
         color: #fff;
-        
-        font-size: 23px;
+        font-size: 27px;
     }
 }

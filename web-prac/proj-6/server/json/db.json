@@ -2,7 +2,7 @@
     "countries": [
         {
             "name": "USA",
-            "flag": "images/USA.png",
+            "flag": "media/images/flags/USA.png",
             "medals": {
                 "gold": 35,
                 "silver": 28,
@@ -48,7 +48,7 @@
         },
         {
             "name": "China",
-            "flag": "images/China.png",
+            "flag": "media/images/flags/China.png",
             "medals": {
                 "gold": 30,
                 "silver": 25,
@@ -94,7 +94,7 @@
         },
         {
             "name": "Japan",
-            "flag": "images/Japan.png",
+            "flag": "media/images/flags/Japan.png",
             "medals": {
                 "gold": 25,
                 "silver": 20,
@@ -140,7 +140,7 @@
         },
         {
             "name": "Germany",
-            "flag": "images/Germany.png",
+            "flag": "media/images/flags/Germany.png",
             "medals": {
                 "gold": 20,
                 "silver": 18,
@@ -186,7 +186,7 @@
         },
         {
             "name": "Australia",
-            "flag": "images/Australia.png",
+            "flag": "media/images/flags/Australia.png",
             "medals": {
                 "gold": 18,
                 "silver": 15,
@@ -232,7 +232,7 @@
         },
         {
             "name": "Russia",
-            "flag": "images/Russia.png",
+            "flag": "media/images/flags/Russia.png",
             "medals": {
                 "gold": 22,
                 "silver": 20,
@@ -278,7 +278,7 @@
         },
         {
             "name": "United Kingdom",
-            "flag": "images/UnitedKingdom.png",
+            "flag": "media/images/flags/UnitedKingdom.png",
             "medals": {
                 "gold": 23,
                 "silver": 18,
@@ -324,7 +324,7 @@
         },
         {
             "name": "France",
-            "flag": "images/France.png",
+            "flag": "media/images/flags/France.png",
             "medals": {
                 "gold": 20,
                 "silver": 17,
