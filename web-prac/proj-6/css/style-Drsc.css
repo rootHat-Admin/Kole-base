@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'Paris2024';
+    src: url('../media/fonts/Paris2024/Paris2024-Variable.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media (max-width: 430px) {
+    body {
+        font-family: 'Paris2024', Arial, sans-serif;
+
+        background-image: url("../media/images/bg.png");  
+        background-size: 110%;
+        background-position: center top;
+        background-repeat: no-repeat;   
+        background-color: #f0f0f0; 
+        
+        color: #fff;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .home-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        position: relative; 
+        padding: 25px 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .header > img {
+        width: 60%;
+    }
+
+    .back-btn {
+        position: absolute; 
+        left: 0px; 
+        top: 30%;
+    }
+
+    .logo {
+        height: 70px;
+        width: auto;
+        margin: 20px auto; 
+        display: block;
+        filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+    }
+    
+    .title-section {
+        text-align: center;
+        margin: 0px 0;
+    }
+
+    .title-section h1 {
+        color: #fff;
+        font-size: 3rem;
+        margin: 0;
+        margin-bottom:  50px;
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .item img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .item-Countries {
+        display: flex;
+        flex-direction: row;        
+        align-items: center;        
+        justify-content: flex-start;
+        gap: 10px;                  
+        cursor: pointer;
+        margin-top: 7px;
+
+        padding: 0.5rem 1rem;      
+        background-color: rgba(255, 255, 255, 0.3);
+
+        border-radius: 17px;
+        border: 2px solid #fff;
+
+        transition: all 0.3s ease;  
+
+        text-decoration: none;
+    }
+
+    .item-Countries:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+        transform: scale(1.02); 
+    }
+
+    .item-Countries img {
+        margin-right: 10px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .item-Countries > p {
+        margin: 0;          
+        margin-right: 70px; 
+        color: #fff;
+        font-size: 27px;
+    }
+}
