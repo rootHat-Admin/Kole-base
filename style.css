@@ -1,0 +1,621 @@
+/* ===== RESET - браузер стандартты отступтарын тазалаймыз ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== ЖАЛПЫ СТИЛЬДЕР ===== */
+body {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 16px;
+  color: #2f2f2f;
+  background-color: #f3f4f6;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+/* ===== CONTAINER - контентті ортада ұстайды ===== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ===== HEADER ===== */
+.header {
+  background-color: #2d3748;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Логотип стилі */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4f8cff;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  color: #f42346; /* акцент түс */
+}
+
+/* ===== НАВИГАЦИЯ ===== */
+.nav-list {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.nav-link {
+  color: #fcfdff;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+
+/* Hover эффектісі - тышқан келгенде түс өзгереді */
+.nav-link:hover,
+.nav-link.active {
+  color: #4f8cff;
+}
+
+/* ===== DROPDOWN MENU ===== */
+.has-dropdown {
+  position: relative; /* dropdown осы элементке қарай орналасады */
+}
+
+.dropdown-menu {
+  display: none; /* әдепкіде жасырын */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  min-width: 190px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  z-index: 200;
+}
+
+/* Dropdown ашылғанда - JS арқылы open класы қосылады */
+.has-dropdown.open .dropdown-menu {
+  display: block;
+}
+
+.filter-item {
+  display: block;
+  padding: 10px 16px;
+  color: #333;
+  font-size: 14px;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background 0.2s;
+}
+
+.dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.dropdown-item:hover {
+  background-color: #f3f7ff;
+  color: #4f8cff;
+}
+
+/* ===== БУРГЕР БАТЫРМА - мобильде навигацияны ашу үшін ===== */
+.burger-btn {
+    color: #fff;      
+    font-size: 32px;  
+
+    display: none; /* desktop-та жасырын */
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+/* ===== BANNER БӨЛІМІ ===== */
+.banner {
+  background-color: #1f1f35;
+  color: #fff;
+  padding: 70px 0;
+}
+
+.banner-tag {
+  display: inline-block;
+  background-color: #4f8cff;
+  color: #fff;
+  font-size: 13px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+.banner-content h1 {
+  font-size: 36px;
+  line-height: 1.3;
+  margin-bottom: 15px;
+  max-width: 600px;
+}
+
+.banner-content p {
+  font-size: 16px;
+  color: #aaa;
+  margin-bottom: 25px;
+  max-width: 500px;
+}
+
+/* Негізгі батырма стилі */
+.btn-main {
+  display: inline-block;
+  background-color: #4f8cff;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 5px;
+  font-size: 15px;
+  transition: background 0.3s;
+}
+
+.btn-main:hover {
+  background-color: #3c74d8;
+}
+
+/* ===== НЕГІЗГІ КОНТЕНТ АЙМАҒЫ ===== */
+.main-content {
+  padding: 40px 0;
+}
+
+/* Grid: солжақта мақалалар, оңжақта sidebar */
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 300px; /* мақалалар кеңірек, sidebar тар */
+  gap: 30px;
+  align-items: start;
+}
+
+/* ===== МАҚАЛАЛАР БӨЛІМІ ===== */
+.section-title {
+  font-size: 22px;
+  color: #1a1a2e;
+  margin-bottom: 20px;
+  border-left: 8px solid #3c74d8;
+  padding-left: 12px;
+}
+
+/* ===== МАҚАЛА КАРТАЛАРЫ - GRID ===== */
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 2 баған */
+  gap: 20px;
+}
+
+/* Жекелеген карта стилі */
+.article-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #dcdfe4;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover - карта жоғары қалқиды */
+.article-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+/* Суреттің үстіндегі орамша */
+.card-img-wrap {
+  position: relative;
+  height: 150px;
+  overflow: hidden;
+  background-color: #ddd; /* суреттер болмаса сұр фон */
+}
+
+.card-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Категория белгісі - суреттің үстінде */
+.card-cat {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Әр категорияның өз түсі бар */
+.card-cat.frontend      { background-color: #5b8def; }
+.card-cat.backend       { background-color: #4caf50; }
+.card-cat.mobile        { background-color: #8b6fd6; }
+.card-cat.cybersecurity { background-color: #d9534f; }
+.card-cat.ai            { background-color: #f0ad4e; }
+.card-cat.uiux          { background-color: #3bb4a1; }
+
+/* Карта мазмұны */
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 15px;
+  color: #2d3748;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.card-text {
+  font-size: 13px;
+  color: #6b7280;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+/* Карта астыңғы бөлімі - күн + сілтеме */
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #f0f0f0;
+  padding-top: 10px;
+}
+
+.card-date {
+  font-size: 12px;
+  color: #999;
+}
+
+/* ===== SIDEBAR (MODERN DESIGN) ===== */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar-widget {
+  background: #fff;
+  border: 1px solid #eef0f4;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.sidebar-widget:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* TITLE */
+.widget-title {
+  font-size: 15px;
+  color: #1f2937;
+  margin-bottom: 14px;
+  padding-left: 10px;
+  border-left: 4px solid #4f8cff;
+  font-weight: 600;
+}
+
+/* CATEGORY LIST */
+.cat-list li {
+  border: none;
+}
+
+.cat-list a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 8px;
+  transition: all 0.2s;
+  color: #444;
+}
+
+.cat-list a:hover {
+  background: #f3f7ff;
+  color: #4f8cff;
+  transform: translateX(3px);
+}
+
+.cat-list a span {
+  background: #eef2ff;
+  color: #4f8cff;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+
+/* POPULAR LIST */
+.popular-list a {
+  display: block;
+  padding: 8px 10px;
+  border-radius: 6px;
+  transition: all 0.2s;
+  color: #444;
+}
+
+.popular-list a:hover {
+  background: #fff1f2;
+  color: #e94560;
+  transform: translateX(3px);
+}
+
+/* ===== CONTACT ===== */
+.contact-page {
+  padding: 60px 0;
+  background-color: #f3f4f6;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 600px;
+  background: #fff;
+  padding: 35px 40px;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 13px 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: inherit;
+  background: #f9fafb;
+  outline: none;
+  transition: border-color 0.3s, background 0.3s, box-shadow 0.3s;
+  color: #2f2f2f;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #4f8cff;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(79, 140, 255, 0.12);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.contact-form textarea {
+  height: 150px;
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.contact-form .btn-main {
+  align-self: flex-start;
+  padding: 13px 35px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background-color: #2d3748;
+  color: #c7c7c7;
+  padding: 25px 0;
+  margin-top: 40px;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.footer p {
+  font-size: 14px;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-nav a {
+  color: #aaa;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.footer-nav a:hover {
+  color: #4f8cff;
+}
+
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  /* Layout */
+  .main-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .sidebar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .articles-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Banner */
+  .banner {
+    padding: 50px 0;
+  }
+  .banner-content h1 {
+    font-size: 30px;
+    max-width: 100%;
+  }
+  .banner-content p {
+    max-width: 100%;
+  }
+
+  /* Contact */
+  .contact-page {
+    padding: 40px 0;
+  }
+  .contact-form {
+    max-width: 100%;
+  }
+
+  /* Header */
+  .nav-list {
+    gap: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 12px;
+  }
+
+  /* Layout */
+  .main-grid {
+    gap: 0; /* уже 1fr из 1024, gap сбрасываем если нужно */
+  }
+  .articles-grid {
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    grid-template-columns: 1fr;
+  }
+  .card-img-wrap {
+    height: 220px;
+  }
+
+  /* Header / Nav */
+  .burger-btn {
+    display: flex;
+  }
+  .nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #2d3748;
+    padding: 15px;
+    z-index: 99;
+  }
+  .nav.open {
+    display: block;
+  }
+  .nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+  .nav-link {
+    display: block;
+    width: 100%;
+    padding: 14px 0;
+    border-bottom: 1px solid #2d2d48;
+  }
+
+  /* Dropdown mobile */
+  .dropdown-menu {
+    position: static;
+    display: none;
+    background: #f8fbff;
+    border: none;
+    box-shadow: none;
+    margin-top: 5px;
+  }
+  .has-dropdown.open .dropdown-menu {
+    display: block;
+  }
+  .dropdown-item {
+    color: #dddddd;
+    border-bottom: 1px solid #3a3a55;
+  }
+
+  /* Banner */
+  .banner {
+    padding: 35px 0;
+  }
+  .banner-content h1 {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+  .banner-content p {
+    font-size: 14px;
+  }
+  .btn-main {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Contact */
+  .contact-page {
+    padding: 25px 0;
+  }
+  .contact-form {
+    padding: 25px 20px;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px;
+    padding: 11px 14px;
+  }
+  .contact-form textarea {
+    height: 120px;
+  }
+  .contact-form .btn-main {
+    width: 100%;
+    text-align: center;
+    align-self: stretch;
+  }
+
+  /* Footer */
+  .footer .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
